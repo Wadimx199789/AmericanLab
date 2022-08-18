@@ -276,7 +276,7 @@ body {
 
     .spot-2,
     .spot-4 {
-        top:-100px;
+        top: -100px;
         filter: blur(86px);
         width: 171.03px;
         height: 188.43px;
@@ -287,6 +287,21 @@ body {
         height: 220.62px;
         filter: blur(90px);
         top: 320px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .spot-1 {
+        top: -87px;
+        left: -70px;
+    }
+
+    .spot-2,
+    .spot-4 {
+        top: -140px;
+        filter: blur(65px);
+        width: 134.03px;
+        height: 188.43px;
     }
 }
 

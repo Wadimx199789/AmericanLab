@@ -282,6 +282,21 @@ body {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .spot-1 {
+    top: -87px;
+    left: -70px;
+  }
+  .spot-2,
+  .spot-4 {
+    top: -140px;
+    -webkit-filter: blur(65px);
+            filter: blur(65px);
+    width: 134.03px;
+    height: 188.43px;
+  }
+}
+
 .header {
   background-color: #000;
   position: relative;
