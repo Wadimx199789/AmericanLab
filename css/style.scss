@@ -22,16 +22,24 @@ body {
 }
 
 @media screen and (max-width:577px) {
+    .prices{
+        &__inner{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
     .container {
         max-width: 320px;
         margin: 0 auto;
-        padding-left:12px;
-        padding-right: 12px;
+        padding-left:5px;
+        padding-right: 5px;
     }
 
 }
 
-
+.wrapper{
+    overflow: hidden;
+}
 // ------------------preloader----------------------------------//
 #preloader {
     position: fixed;
@@ -1135,7 +1143,9 @@ body {
     &__image {
         padding-top: 44px
     }
-
+    .form__button{
+        margin-left: 34px;
+    }
     input,
     textarea {
         width: 100%;
@@ -1146,10 +1156,9 @@ body {
         font-size: 20px;
         line-height: 24px;
         outline: none;
-        padding-top: 12px;
-        padding-bottom: 10px;
+        padding-bottom: 8px;
         background-color: inherit;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
         border: none;
         border-bottom: 2px solid #C9C8C8;
         transition: .5s;
@@ -1203,7 +1212,7 @@ body {
             position: absolute;
             left: 0;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-40%);
         }
     }
 
@@ -1220,29 +1229,41 @@ body {
     }
 }
 
-@media screen and (max-width:1201px) {
+@media screen and (max-width:1199px) {
     .contacts {
 
         input,
         textarea {
             font-size: 18px;
             line-height: 22px;
+            &::placeholder{
+                font-size: 18px;
+                line-height: 22px;
+            }
         }
     }
-
+    .form__button{
+        margin-left: 54px;
+    }
 }
 
-@media screen and (max-width:1001px) {
+@media screen and (max-width:991px) {
     .contacts {
         .form__prebutton {
             font-size: 18px;
             line-height: 137.8%;
         }
+        .form__button {
+            margin-left: 24px;
+        }
     }
-
+   
+    .contacts__image {
+        padding-top: 34px;
+    }
 }
 
-@media screen and (max-width:781px) {
+@media screen and (max-width:767px) {
     .contacts {
         .form__prebutton {
             font-size: 14px;
@@ -1250,25 +1271,48 @@ body {
         }
     }
 
-
+    .contacts__image {
+        padding-top: 34px;
+    }
     .contacts {
 
         input,
         textarea {
             font-size: 14px;
             line-height: 17px;
+            &::placeholder{
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
+        .form__prebutton{
+            font-size: 12px;
+        }
+    }
+    .form__button-arrow{
+        width: 30px;
+    }
+    .contacts .form__button {
+        width: 40px;
+        height: 75px;
+        padding-left: 15px;
     }
 }
 
-@media screen and (max-width:601px) {
+@media screen and (max-width:575px) {
     .contacts {
         .form__prebutton {
             font-size: 16px;
             line-height: 137.8%;
         }
     }
-
+    .contacts__empty-box{
+        padding: 0px;
+        width: 0;
+    }
+    .contacts__image{
+        margin-bottom: 45px;
+    }
 }
 
 .form-field {
@@ -1360,7 +1404,7 @@ body {
         }
 
         &__email {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 20px;
             letter-spacing: 0.01em;
         }
@@ -1398,7 +1442,7 @@ body {
         }
 
         &__email {
-            font-size: 13px;
+            font-size: 12px;
             line-height: 16px;
         }
     }

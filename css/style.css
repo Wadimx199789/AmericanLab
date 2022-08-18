@@ -21,12 +21,20 @@ body {
 }
 
 @media screen and (max-width: 577px) {
+  .prices__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   .container {
     max-width: 320px;
     margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 #preloader {
@@ -1018,6 +1026,10 @@ body {
   padding-top: 44px;
 }
 
+.contacts .form__button {
+  margin-left: 34px;
+}
+
 .contacts input,
 .contacts textarea {
   width: 100%;
@@ -1028,10 +1040,9 @@ body {
   font-size: 20px;
   line-height: 24px;
   outline: none;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   background-color: inherit;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid #C9C8C8;
   -webkit-transition: .5s;
@@ -1133,8 +1144,8 @@ body {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 
 .contacts .form__button-blure {
@@ -1151,37 +1162,107 @@ body {
           transform: rotate(-23.73deg);
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .contacts input,
   .contacts textarea {
     font-size: 18px;
     line-height: 22px;
   }
+  .contacts input::-webkit-input-placeholder,
+  .contacts textarea::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts input:-ms-input-placeholder,
+  .contacts textarea:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts input::-ms-input-placeholder,
+  .contacts textarea::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .contacts input::placeholder,
+  .contacts textarea::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .form__button {
+    margin-left: 54px;
+  }
 }
 
-@media screen and (max-width: 1001px) {
+@media screen and (max-width: 991px) {
   .contacts .form__prebutton {
     font-size: 18px;
     line-height: 137.8%;
   }
+  .contacts .form__button {
+    margin-left: 24px;
+  }
+  .contacts__image {
+    padding-top: 34px;
+  }
 }
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 767px) {
   .contacts .form__prebutton {
     font-size: 14px;
     line-height: 137.8%;
+  }
+  .contacts__image {
+    padding-top: 34px;
   }
   .contacts input,
   .contacts textarea {
     font-size: 14px;
     line-height: 17px;
   }
+  .contacts input::-webkit-input-placeholder,
+  .contacts textarea::-webkit-input-placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts input:-ms-input-placeholder,
+  .contacts textarea:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts input::-ms-input-placeholder,
+  .contacts textarea::-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts input::placeholder,
+  .contacts textarea::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts .form__prebutton {
+    font-size: 12px;
+  }
+  .form__button-arrow {
+    width: 30px;
+  }
+  .contacts .form__button {
+    width: 40px;
+    height: 75px;
+    padding-left: 15px;
+  }
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 575px) {
   .contacts .form__prebutton {
     font-size: 16px;
     line-height: 137.8%;
+  }
+  .contacts__empty-box {
+    padding: 0px;
+    width: 0;
+  }
+  .contacts__image {
+    margin-bottom: 45px;
   }
 }
 
@@ -1262,7 +1343,7 @@ body {
     line-height: 22px;
   }
   .footer__email {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     letter-spacing: 0.01em;
   }
@@ -1297,7 +1378,7 @@ body {
     letter-spacing: 0.25px;
   }
   .footer__email {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 16px;
   }
 }
