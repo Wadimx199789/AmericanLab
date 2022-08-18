@@ -292,7 +292,6 @@ body {
 }
 
 .header {
-  overflow-x: hidden;
   background-color: #000;
   position: relative;
 }
