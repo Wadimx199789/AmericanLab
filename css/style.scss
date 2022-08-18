@@ -242,7 +242,7 @@ body {
 
     .spot-2,
     .spot-4 {
-        top:-60px;
+        top: -60px;
         width: 173.51px;
         height: 191.17px;
         filter: blur(100px);
@@ -259,9 +259,34 @@ body {
     .spot-3 {
         width: 238.9px;
         height: 263.2px;
-       left:-130px;
+        left: -130px;
         top: 430px;
         filter: blur(76px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .spot-1 {
+        top: -61px;
+        left: -17px;
+        filter: blur(76px);
+        width: 146px;
+        height: 146px;
+    }
+
+    .spot-2,
+    .spot-4 {
+        top:-100px;
+        filter: blur(86px);
+        width: 171.03px;
+        height: 188.43px;
+    }
+
+    .spot-3 {
+        width: 200.24px;
+        height: 220.62px;
+        filter: blur(90px);
+        top: 320px;
     }
 }
 
