@@ -228,22 +228,22 @@
         // });
         var numbers = $('.slider__number');
         var strips = $('.slider__strip');
-        var currentSlide = 0
+        // var currentSlide = 0
 
-        $('#slider__box').on('swipe', function ( e,slick,direction) {
-            if(direction=="left"){
-                currentSlide+=1
+        $('#slider__box').on('afterChange', function ( e,slick,currentSlide) {
+        //     if(direction=="left"){
+        //         currentSlide+=1
 
-                if(currentSlide==3){
-                    currentSlide=0
-                }
-            }
-           if(direction=="right"){
-            currentSlide-=1;
-            if(currentSlide==-1){
-                currentSlide=2;
-            }
-           }
+        //         if(currentSlide==3){
+        //             currentSlide=0
+        //         }
+        //     }
+        //    if(direction=="right"){
+        //     currentSlide-=1;
+        //     if(currentSlide==-1){
+        //         currentSlide=2;
+        //     }
+        //    }
             $(numbers).each(function (index, value) {
                 if ($(this).hasClass("active")) {
                     $(this).removeClass("active")
@@ -265,9 +265,9 @@
             console.log(currentSlide)
             $(numbers[currentSlide]).addClass("active")
         });
-    //    $(numbers).each(function(index,value){
+       $(numbers).each(function(index,value){
 
-    //    }) 
+       }) 
 
     //       console.log($(".slider__number"));
 
@@ -508,10 +508,10 @@
 
         clPreloader();
         clMenuOnScrolldown();
-        clOffCanvas();
-        clPhotoswipe();
-        clStatCount();
-        clMasonryFolio();
+        // clOffCanvas();
+        // clPhotoswipe();
+        // clStatCount();
+        // clMasonryFolio();
         clSlickSlider();
         // clSmoothScroll();
         clPlaceholder();
