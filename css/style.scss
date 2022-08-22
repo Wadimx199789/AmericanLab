@@ -1588,6 +1588,11 @@ body {
         outline: none;
         border-bottom: 2px solid #FFAE00 !important;
     }
+
+        .contactForm__box{
+            margin-left: auto;
+        }
+    
 }
 
 .contacts {
@@ -1690,6 +1695,8 @@ body {
 }
 
 @media screen and (max-width:1199px) {
+   
+   
     .contacts {
 
         input,

@@ -1365,6 +1365,10 @@ body {
   border-bottom: 2px solid #FFAE00 !important;
 }
 
+.contacts--packing .contactForm__box {
+  margin-left: auto;
+}
+
 .contacts {
   padding-bottom: 97px;
   background-color: #000;
