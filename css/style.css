@@ -642,6 +642,10 @@ body {
   position: relative;
 }
 
+.slider--packing .slider__numbers .spot {
+  background: rgba(255, 174, 0, 0.5);
+}
+
 .slider__numbers {
   -webkit-box-align: center;
       -ms-flex-align: center;

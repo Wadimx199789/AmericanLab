@@ -760,6 +760,13 @@ body {
 }
 
 .slider {
+    &--packing{
+        .slider__numbers{
+            .spot {
+                background: rgba(255, 174, 0, 0.5);
+            }
+        }
+    }
     &__numbers {
         align-items: center;
         z-index: 99;
