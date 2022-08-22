@@ -375,6 +375,11 @@ body {
     position: relative;
 
     &--packing {
+        .header__button-box{
+            
+            position: relative;
+            max-width: 500px;
+        }
         .header__bottom-image {
             position: static;
             padding-top: 150px;
@@ -457,6 +462,21 @@ body {
     }
 
     &__button-box {
+        position: relative;
+        max-width: 440px;
+
+        .spot {
+            top:-5px;
+            right: 15px;
+            width: 51.89px;
+            height: 57.17px;
+            position: absolute;
+            background: rgba(0, 228, 255, 0.6);
+            filter: blur(30px);
+            transform: rotate(-23.73deg);
+        }
+
+        column-gap: 27px;
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -467,7 +487,28 @@ body {
     }
 
     &__button {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        overflow: hidden;
+
+        &:hover {
+            .header__button-arrow {
+                outline: none;
+                animation-name: moveToRight;
+                animation-duration: 1000ms;
+                animation-timing-function: ease;
+            }
+        }
+
+        &:active {
+            .header__button-circle {
+                top: 1px;
+                position: relative;
+            }
+        }
+
         position: relative;
+        padding-left:28px;
 
         &-box {
             display: flex;
@@ -478,11 +519,10 @@ body {
             position: absolute;
             left: 0;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-40%);
         }
 
-        width:81px;
-        height: 73px;
+
     }
 }
 
@@ -507,8 +547,17 @@ body {
 }
 
 @media screen and (max-width:1199px) {
+    
     .header {
+        &__button-box {
+            position: relative;
+            max-width: 390px;
+        }
         &--packing {
+            .header__button-box{
+            
+                max-width: 442px;
+            }
             .header__bottom-image {
                 padding-top: 133px;
                 padding-bottom: 18px;
@@ -558,7 +607,22 @@ body {
 
 @media screen and (max-width:991px) {
     .header {
+
+        &__button-box {
+            position: relative;
+            max-width: 390px;
+            align-items: center;
+           
+        }
         &--packing {
+            .header__button-box{
+                column-gap: 62px;
+                max-width: 352px;
+                .spot{
+                    top:4px;
+                    right: 18px;
+                }
+            }
             .header__bottom-image {
                 padding-top: 182px;
                 padding-bottom: 10px;
@@ -605,7 +669,30 @@ body {
 
 @media screen and (max-width:767px) {
     .header {
+        &__button-box {
+            max-width: 304px;
+            .spot{
+                top:-9px;
+                right: 18px;
+            }
+            .header__button{
+                padding-left: 19px;
+            }
+            .header__button-arrow{
+                transform: translateY(-50%);
+                width: 35px;
+            }
+        }
         &--packing {
+            
+                .header__button-box{
+                    column-gap: 27px;
+                    max-width: 272px;
+                    .spot{
+                        top:-2px;
+                        right: 14px;
+                    }
+                }
             .header__bottom-image {
                 padding-top: 161px;
                 padding-bottom: 27px;
