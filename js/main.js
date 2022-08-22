@@ -235,14 +235,20 @@
                     $(this).removeClass("active")
                 }
             })
-            if (currentSlide + 1 <= $(strips).length) {
+            if (currentSlide <= $(strips).length) {
                 $(strips).each(function (index, value) {
                     if ($(this).hasClass("active")) {
                         $(this).removeClass("active")
                     }
                 });
-                $(strips[currentSlide]).addClass("active")
+                $(strips[currentSlide]).addClass("active");
+                if(currentSlide==2){
+                    $(strips[currentSlide-1]).addClass("active");
+                }
+                
             }
+           
+            console.log(currentSlide)
             $(numbers[currentSlide]).addClass("active")
         });
     //    $(numbers).each(function(index,value){
