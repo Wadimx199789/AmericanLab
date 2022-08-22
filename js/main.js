@@ -265,28 +265,11 @@
             console.log(currentSlide)
             $(numbers[currentSlide]).addClass("active")
         });
-       $(numbers).each(function(index,value){
-            $(this).on("click",function(value,index){
-                $(numbers).each(function (index, value) {
-                    if ($(this).hasClass("active")) {
-                        $(this).removeClass("active")
-                    }
-                    
-                });
-                $('#slider__box').slick('slickGoTo', $(this).index()-1);
-                
-                
-                $(strips).each(function (index, value) {
-                    if ($(this).hasClass("active")) {
-                        $(this).removeClass("active")
-                    }
-                });
-                
-                $(this).addClass("active")
-            })
-       }) 
+    //    $(numbers).each(function(index,value){
 
-          console.log($(".slider__number"));
+    //    }) 
+
+    //       console.log($(".slider__number"));
 
 
         // $('.slider__box').on('init reInit', function (event, slick) {
