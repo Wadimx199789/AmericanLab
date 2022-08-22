@@ -228,8 +228,22 @@
         // });
         var numbers = $('.slider__number');
         var strips = $('.slider__strip');
+        var currentSlide = 0
 
-        $('#slider__box').on('afterChange', function (e, slick, currentSlide) {
+        $('#slider__box').on('swipe', function ( e,slick,direction) {
+            if(direction=="left"){
+                currentSlide+=1
+
+                if(currentSlide==3){
+                    currentSlide=0
+                }
+            }
+           if(direction=="right"){
+            currentSlide-=1;
+            if(currentSlide==-1){
+                currentSlide=2;
+            }
+           }
             $(numbers).each(function (index, value) {
                 if ($(this).hasClass("active")) {
                     $(this).removeClass("active")
@@ -251,28 +265,28 @@
             console.log(currentSlide)
             $(numbers[currentSlide]).addClass("active")
         });
-    //    $(numbers).each(function(index,value){
-    //         $(this).on("click",function(value,index){
-    //             $(numbers).each(function (index, value) {
-    //                 if ($(this).hasClass("active")) {
-    //                     $(this).removeClass("active")
-    //                 }
+       $(numbers).each(function(index,value){
+            $(this).on("click",function(value,index){
+                $(numbers).each(function (index, value) {
+                    if ($(this).hasClass("active")) {
+                        $(this).removeClass("active")
+                    }
                     
-    //             });
-    //             $('#slider__box').slick('slickGoTo', $(this).index()-);
+                });
+                $('#slider__box').slick('slickGoTo', $(this).index()-1);
                 
                 
-    //             $(strips).each(function (index, value) {
-    //                 if ($(this).hasClass("active")) {
-    //                     $(this).removeClass("active")
-    //                 }
-    //             });
+                $(strips).each(function (index, value) {
+                    if ($(this).hasClass("active")) {
+                        $(this).removeClass("active")
+                    }
+                });
                 
-    //             $(this).addClass("active")
-    //         })
-    //    }) 
+                $(this).addClass("active")
+            })
+       }) 
 
-        //   console.log($(".slider__number"))
+          console.log($(".slider__number"));
 
 
         // $('.slider__box').on('init reInit', function (event, slick) {
