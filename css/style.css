@@ -1807,12 +1807,32 @@ body {
   border-right: 5px solid #FF3400;
 }
 
-.footer--packing .header__link::after {
+.footer--packing .footer__link::after {
   background: #FFAE00;
+}
+
+.footer--packing .footer__link.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #FFAE00;
+  bottom: 0;
+  left: 0;
 }
 
 .footer__link {
   position: relative;
+}
+
+.footer__link.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #FF3400;
+  bottom: 0;
+  left: 0;
 }
 
 .footer__link::after {
@@ -1857,13 +1877,13 @@ body {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 1401px) {
+@media screen and (max-width: 1399px) {
   .footer {
     padding-bottom: 40px;
   }
 }
 
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1199px) {
   .footer {
     padding-bottom: 43px;
   }

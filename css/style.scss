@@ -2012,15 +2012,32 @@ body {
 
 
 .footer--packing {
-    .header__link::after {
+    .footer__link::after {
         background: #FFAE00;
+    }
+    .footer__link.active::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #FFAE00;
+        bottom: 0;
+        left: 0;
     }
 }
 
 .footer__link {
     position: relative;
 }
-
+.footer__link.active::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #FF3400;
+    bottom: 0;
+    left: 0;
+}
 .footer__link::after {
     position: absolute;
     content: "";
@@ -2063,7 +2080,7 @@ body {
     }
 }
 
-@media screen and (max-width:1401px) {
+@media screen and (max-width:1399px) {
     .footer {
         padding-bottom: 40px;
 
@@ -2071,7 +2088,7 @@ body {
 
 }
 
-@media screen and (max-width:1201px) {
+@media screen and (max-width:1199px) {
     .footer {
         padding-bottom: 43px;
 
