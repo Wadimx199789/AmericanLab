@@ -2089,20 +2089,20 @@ body {
 
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width:991px) {
     .footer__link {
-        display: block;
+        display: inline-block;
         margin-bottom: 25px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .footer__link {
         margin-bottom: 22px;
     }
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:575px) {
     .footer__link {
         margin-bottom: 16px;
     }
