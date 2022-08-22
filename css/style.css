@@ -1381,6 +1381,9 @@ body {
     font-size: 16px;
     line-height: 0.5px;
   }
+  .prices__box-arrow {
+    width: 35px !important;
+  }
   .prices__box-button {
     padding-left: 18px;
   }
@@ -1577,9 +1580,9 @@ body {
 }
 
 .contacts .form__button {
+  padding-right: 0px;
+  overflow: hidden;
   position: relative;
-  width: 66px;
-  height: 75px;
   background-color: inherit;
   border: none;
   padding-top: 5px;
@@ -1596,16 +1599,35 @@ body {
           transform: translateY(-40%);
 }
 
-.contacts .form__button-blure {
+.contacts .form__button-box {
+  position: relative;
+  max-width: 452px;
+}
+
+.contacts .form__button-box .form__button:hover .form__button-arrow {
+  outline: none;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.contacts .form__button-box .form__button:active .form__button-circle {
+  top: 1px;
+  position: relative;
+}
+
+.contacts .form__button-box .spot {
   top: 0;
-  left: 0;
+  right: 30px;
   position: absolute;
-  border-radius: 50%;
   width: 51.89px;
   height: 57.17px;
   background: rgba(0, 228, 255, 0.6);
-  -webkit-filter: blur(60px);
-          filter: blur(60px);
+  -webkit-filter: blur(34px);
+          filter: blur(34px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -1646,8 +1668,11 @@ body {
     font-size: 18px;
     line-height: 137.8%;
   }
+  .contacts .form__button-box .spot {
+    right: 0;
+  }
   .contacts .form__button {
-    margin-left: 24px;
+    margin-left: 20px;
   }
   .contacts__image {
     padding-top: 34px;
@@ -1695,13 +1720,14 @@ body {
     width: 30px;
   }
   .contacts .form__button {
-    width: 52px;
-    height: 75px;
-    padding-left: 15px;
+    padding-left: 14px;
   }
 }
 
 @media screen and (max-width: 575px) {
+  .contacts .form__button-box .spot {
+    right: 15px;
+  }
   .contacts .form__prebutton {
     font-size: 16px;
     line-height: 137.8%;
