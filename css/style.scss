@@ -474,6 +474,7 @@ body {
         }
 
         &-arrow {
+            outline: none;
             position: absolute;
             left: 0;
             top: 50%;
@@ -1220,6 +1221,7 @@ body {
 
         &-arrow {
             position: absolute;
+            outline: none;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
@@ -1235,6 +1237,7 @@ body {
 
         &-button:hover {
             .prices__box-arrow {
+                outline: none;
                 animation-name: moveToRight;
                 animation-duration: 1000ms;
                 animation-timing-function: ease;
@@ -1452,6 +1455,7 @@ body {
     .prices {
         &__box {
             &-arrow {
+                outline: none;
                 width: 35px;
             }
 
@@ -1532,6 +1536,7 @@ body {
 
         &__box {
             &-arrow {
+                outline: none;
                 width: 40px;
             }
 
@@ -1681,6 +1686,7 @@ body {
         padding-left: 30px;
 
         &-arrow {
+            outline: none;
             position: absolute;
             left: 0;
             top: 50%;
@@ -1771,11 +1777,12 @@ body {
     }
 
     .form__button-arrow {
+        outline: none;
         width: 30px;
     }
 
     .contacts .form__button {
-        width: 40px;
+        width: 52px;
         height: 75px;
         padding-left: 15px;
     }

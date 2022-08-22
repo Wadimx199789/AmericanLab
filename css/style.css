@@ -456,6 +456,7 @@ body {
 }
 
 .header__button-arrow {
+  outline: none;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1045,6 +1046,7 @@ body {
 
 .prices__box-arrow {
   position: absolute;
+  outline: none;
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1060,6 +1062,7 @@ body {
 }
 
 .prices__box-button:hover .prices__box-arrow {
+  outline: none;
   -webkit-animation-name: moveToRight;
           animation-name: moveToRight;
   -webkit-animation-duration: 1000ms;
@@ -1260,6 +1263,7 @@ body {
     padding-bottom: 39px;
   }
   .prices__box-arrow {
+    outline: none;
     width: 35px;
   }
   .prices__box-name {
@@ -1324,6 +1328,7 @@ body {
     padding-bottom: 67px;
   }
   .prices__box-arrow {
+    outline: none;
     width: 40px;
   }
   .prices__box-price {
@@ -1497,6 +1502,7 @@ body {
 }
 
 .contacts .form__button-arrow {
+  outline: none;
   position: absolute;
   left: 0;
   top: 50%;
@@ -1599,10 +1605,11 @@ body {
     font-size: 12px;
   }
   .form__button-arrow {
+    outline: none;
     width: 30px;
   }
   .contacts .form__button {
-    width: 40px;
+    width: 52px;
     height: 75px;
     padding-left: 15px;
   }
