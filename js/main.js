@@ -208,129 +208,86 @@
     /* slick slider
      * ------------------------------------------------------ */
     var clSlickSlider = function () {
-
-        $('.recentWorks__slider-container').slick({
-            touchThreshold: 50,
-            arrows: false,
-            swipeToSlide:true,
-            swipe:true,
-            slidesToShow: 2,
-            variableWidth: true,
-            infinite: true,
-            touchMove:true,
-            speed: 500,
-        });
-        $('.services__slider').slick({
-            touchThreshold: 50,
-            arrows: false,
-            swipeToSlide:true,
-            swipe:true,
-            slidesToShow: 1,
-            slidesToScroll:1,
-            infinite: true,
-            touchMove:true,
-            speed: 500,
-        });
-
-        $('.clients__slider').slick({
-            touchThreshold: 50,
-            swipe:true,
-            swipeToSlide:true,
-            touchMove:true,
+        $('.slider__box').slick({
             arrows: false,
             dots: true,
+            dots: false,
             infinite: true,
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            pauseOnFocus: false,
-            autoplaySpeed: 1000,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 1,
-                    }
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+
+        //   $('#slider__box').on('init reInit', function (event, slick) {
+        //     var amount = slick.slideCount;
+        //     console.log(amount);
+        // });
+        var numbers = $('.slider__number');
+        var strips = $('.slider__strip');
+
+        $('#slider__box').on('afterChange', function (e, slick, currentSlide) {
+            $(numbers).each(function (index, value) {
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active")
                 }
-
-            ]
+            })
+            if (currentSlide + 1 <= $(strips).length) {
+                $(strips).each(function (index, value) {
+                    if ($(this).hasClass("active")) {
+                        $(this).removeClass("active")
+                    }
+                });
+                $(strips[currentSlide]).addClass("active")
+            }
+            $(numbers[currentSlide]).addClass("active")
         });
+    //    $(numbers).each(function(index,value){
+    //         $(this).on("click",function(value,index){
+    //             $(numbers).each(function (index, value) {
+    //                 if ($(this).hasClass("active")) {
+    //                     $(this).removeClass("active")
+    //                 }
+                    
+    //             });
+    //             $('#slider__box').slick('slickGoTo', $(this).index()-);
+                
+                
+    //             $(strips).each(function (index, value) {
+    //                 if ($(this).hasClass("active")) {
+    //                     $(this).removeClass("active")
+    //                 }
+    //             });
+                
+    //             $(this).addClass("active")
+    //         })
+    //    }) 
+
+        //   console.log($(".slider__number"))
 
 
+        // $('.slider__box').on('init reInit', function (event, slick) {
+        //     var numbers = $(".slider__number");
 
+        //     if(numbers){
+        //         console.log(numbers)
+        //     }
+        //     else{
+        //         console.log("ybabuf")
+        //     }
+        //     // var amount = slick.slideCount;
+        //     // $('#range').attr('max', amount);
+        // })
 
+        // $('#slider').on('afterChange', function (e, slick, currentSlide) {
+        //     $('#range').val(currentSlide + 1);
+        // })
 
-        $('#slider').on('init reInit', function (event, slick) {
-            var amount = slick.slideCount;
-            $('#range').attr('max', amount);
-        })
-
-        $('#slider').on('afterChange', function (e, slick, currentSlide) {
-            $('#range').val(currentSlide + 1);
-        })
-
-        $('#range').on('input change', function () {
-            $('#slider').slick('slickGoTo', this.value - 1);
-        });
+        // $('#range').on('input change', function () {
+        //     $('#slider').slick('slickGoTo', this.value - 1);
+        // });
 
         // ---------------------------------------------------------------------
-        $('#recentWorks').on('init reInit', function (event, slick) {
-            var amount = slick.slideCount;
-            $('#recentWorks__range').attr('max', amount);
-        })
 
-        $('#recentWorks').on('afterChange', function (e, slick, currentSlide) {
-            $('#recentWorks__range').val(currentSlide + 1);
-        })
-
-        $('#recentWorks__range').on('input change', function () {
-            $('#recentWorks').slick('slickGoTo', this.value - 1);
-        });
-
-
-
-        $('#recentWorks').on('afterChange', function (e, slick, currentSlide) {
-
-            var slide = slick.$slides[currentSlide];
-            $(".recentWorks__subtitle").text($(slide).data("name"));
-            $(".recentWorks__text").text($(slide).data("category"));
-        });
-
-        // ---------------------------------------------------------------------------
-        $('#services__slider--first').on('init reInit', function (event, slick) {
-            var amount = slick.slideCount;
-            $('#services__range--first').attr('max', amount);
-        })
-
-        $('#services__slider--first').on('afterChange', function (e, slick, currentSlide) {
-            $('#services__range--first').val(currentSlide + 1);
-        })
-
-        $('#services__range--first').on('input change', function () {
-            $('#services__slider--first').slick('slickGoTo', this.value - 1);
-        });
-
-
-
-        $('#services__slider--second').on('init reInit', function (event, slick) {
-            var amount = slick.slideCount;
-            $('#services__range--second').attr('max', amount);
-        })
-
-        $('#services__slider--second').on('afterChange', function (e, slick, currentSlide) {
-            $('#services__range').val(currentSlide + 1);
-        })
-
-        $('#services__range--second').on('input change', function () {
-            $('#services__slider--second').slick('slickGoTo', this.value - 1);
-        });
     }
     //     $('.testimonials').slick({
     //         arrows: true,
@@ -365,7 +322,7 @@
      * ------------------------------------------------------ */
     var clSmoothScroll = function () {
 
-        $(".smoothscroll").on("click", function(e){
+        $(".smoothscroll").on("click", function (e) {
             e.preventDefault();
             var anchor = $(this).attr('href');
             $('html, body').stop().animate({

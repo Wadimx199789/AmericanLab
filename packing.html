@@ -14,7 +14,7 @@
 
 <body>
     <div class="wrapper">
-        <!-- <header class="header" data-aos="fade-up">
+        <header class="header header--packing">
             <div class="spot-1"></div>
             <div class="spot-2"></div>
             <div class="spot-3"></div>
@@ -25,15 +25,15 @@
                         <div class="header__menu-list row">
                             <li
                                 class="header__menu-item col-4 justify-content-center justify-content-sm-end  d-flex align-items-center">
-                                <a href="#" class="header__menu-link">сайт</a>
+                                <a href="./index.html" class="header__menu-link">сайт</a>
                             </li>
                             <li class="header__menu-item col-4 d-flex justify-content-center align-items-center">
-                                <a href="#" class="header__menu-link logo">
+                                <a href="./index.html" class="header__menu-logo logo">
                                     <img src="./assets/header/logo.svg" alt="logo">
                                 </a>
                             </li>
                             <li class="header__menu-item col-4 justify-content-start d-flex align-items-center">
-                                <a href="#" class="header__menu-link">упаковка</a>
+                                <a href="./packing.html" class="header__menu-link active">упаковка</a>
                             </li>
                         </div>
                     </div>
@@ -41,10 +41,10 @@
                 <div class="header__bottom">
                     <div class="container">
                         <div class="header__bottom-inner row justify-content-center">
-                            <div class="col-5"></div>
+                            <div class="col-6"></div>
 
                             <div class="header__bottom-content">
-                                <h1 class="header__title">Создание <span>веб-сайта</span></h1>
+                                <h1 class="header__title">Создание <span> упаковки</span></h1>
                                 <p class="header__bottom-text">
                                     поможет <span>достичь главных целей бизнеса:</span> привлечь новых клиентов и
                                     создать
@@ -52,7 +52,7 @@
                                 </p>
                                 <div class="header__button-box">
                                     <span>
-                                        Оставить заявку на сайт
+                                        Оставить заявку на упаковку
                                     </span>
                                     <a href="#" class="header__button">
                                         <svg class="header__button-arrow" width="46" height="8" viewBox="0 0 46 8"
@@ -69,8 +69,8 @@
                                 </div>
                             </div>
                             <div
-                                class="header__bottom-image col-sm-7 col-11 d-flex justify-content-sm-end justify-content-center">
-                                <img src="./assets/header/header-image.png" alt="header-image">
+                                class="header__bottom-image col-sm-6 col-11 d-flex justify-content-sm-start justify-content-end">
+                                <img src="./assets/header/header-packing-image.png" alt="header-packing-image">
                             </div>
                         </div>
 
@@ -79,9 +79,6 @@
             </div>
         </header>
         <main class="main">
-            <section class="slider">
-                <img src="./assets/slider/slide.png" alt="slide">
-            </section> -->
             
             <section class="prices prices--packing">
                 <div class="container">
@@ -90,7 +87,7 @@
                     </h2>
                     <div class="prices__inner row">
                         <div class="col-lg-4 col-sm-6 col-12 ">
-                            <div class="prices__box prices__box--standart">
+                            <div class="prices__box prices__box--standart" data-aos="flip-right">
                                 <div class="prices__box-spot--first"></div>
                                 <div class="prices__box-spot--second"></div>
                                 <img class="prices__box-img" src="./assets/prices/first-packing-item.png" alt="standart">
@@ -137,7 +134,7 @@
                                 </ul>
                                 <div class="prices__box-contact">
                                     <span>Связаться с нами</span>
-                                    <a href="/" class="prices__box-button">
+                                    <a href="#contacts" class="prices__box-button">
                                         <svg class="prices__box-arrow" width="46" height="8" viewBox="0 0 46 8"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -153,7 +150,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="prices__box  prices__box--business">
+                            <div class="prices__box  prices__box--business" data-aos="flip-right">
                                 <div class="prices__box-spot--first"></div>
                                 <div class="prices__box-spot--second"></div>
                                 <img class="prices__box-img" src="./assets/prices/second-packing-item.png" alt="business">
@@ -201,7 +198,7 @@
                                 </ul>
                                 <div class="prices__box-contact">
                                     <span>Связаться с нами</span>
-                                    <a href="/" class="prices__box-button">
+                                    <a href="#contacts" class="prices__box-button">
                                         <svg class="prices__box-arrow" width="46" height="8" viewBox="0 0 46 8"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -217,7 +214,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-6 col-12">
-                            <div class="prices__box  prices__box--premium ">
+                            <div class="prices__box  prices__box--premium " data-aos="flip-right">
                                 <div class="prices__box-spot--first"></div>
                                 <div class="prices__box-spot--second"></div>
                                 <img class="prices__box-img" src="./assets/prices/third-packing-item.png" alt="premium">
@@ -264,7 +261,7 @@
                                 </ul>
                                 <div class="prices__box-contact">
                                     <span>Связаться с нами</span>
-                                    <a href="" class="prices__box-button">
+                                    <a href="#contacts" class="prices__box-button">
                                         <svg class="prices__box-arrow" width="46" height="8" viewBox="0 0 46 8"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -282,13 +279,13 @@
                     </div>
                 </div>
             </section>
-            <section class="contacts">
+            <section class="contacts contacts--packing" id="contacts">
                 <div class="container">
                     <div class="contacts__inner">
                         <h2 class="contacts__title title">
                             Связаться с нами
                         </h2>
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex ">
                             <div class="col-sm-1"></div>
                             <div class="col-sm-5 col-10 col-lg-4">
                                 <div class="contacts__image contacts__image--packing">
@@ -297,7 +294,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 col-12">
+                            
+                            <div class="col-sm-6 col-12 ml-auto ">
                                 <form name="contactForm" id="contactForm" method="post" novalidate="novalidate">
                                     <fieldset>
                                         <div class="form-field">
@@ -341,7 +339,7 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
+        <footer class="footer footer--packing">
             <div class="container">
                 <div class="footer__inner">
                     <div class="row justify-content-center">
@@ -350,12 +348,12 @@
                             <a href="./index.html" class="footer__site footer__link">сайт</a>
                         </div>
                         <div class="col-lg-2 col-6 col-sm-3">
-                            <a href="./packing.html" class="footer__packaging footer__link">
+                            <a  href="./packing.html" class="footer__packaging footer__link">
                                 упаковка
                             </a>
                         </div>
                         <div class="col-lg-4 col-10 col-sm-6 ms-sm-auto">
-                            <a class="footer__email">
+                            <a href="http://lab-design.by/" class="footer__email">
                                 Дизайн сайта — www.lab-design.by
                             </a>
                         </div>
@@ -389,7 +387,7 @@
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-<!-- <script src="js/scroll.js"></script> -->
+<script src="js/scroll.js"></script>
 </body>
 
 
