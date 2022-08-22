@@ -677,8 +677,8 @@ body {
   width: 17px;
   height: 1px;
   background: #DBCCCC;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider__number {
@@ -691,8 +691,8 @@ body {
   line-height: 137.8%;
   letter-spacing: 1px;
   color: #DBCCCC;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .slider__inner {

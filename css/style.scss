@@ -760,13 +760,14 @@ body {
 }
 
 .slider {
-    &--packing{
-        .slider__numbers{
+    &--packing {
+        .slider__numbers {
             .spot {
                 background: rgba(255, 174, 0, 0.5);
             }
         }
     }
+
     &__numbers {
         align-items: center;
         z-index: 99;
@@ -791,7 +792,10 @@ body {
         width: 17px;
         height: 1px;
         background: #DBCCCC;
-        transition: .3s;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     &__number {
@@ -804,7 +808,10 @@ body {
         line-height: 137.8%;
         letter-spacing: 1px;
         color: #DBCCCC;
-        transition: .3s;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     background: #1A1A1A;
@@ -1589,10 +1596,10 @@ body {
         border-bottom: 2px solid #FFAE00 !important;
     }
 
-        .contactForm__box{
-            margin-left: auto;
-        }
-    
+    .contactForm__box {
+        margin-left: auto;
+    }
+
 }
 
 .contacts {
@@ -1695,8 +1702,8 @@ body {
 }
 
 @media screen and (max-width:1199px) {
-   
-   
+
+
     .contacts {
 
         input,
