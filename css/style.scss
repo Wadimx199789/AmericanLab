@@ -55,7 +55,7 @@ body {
     bottom: 0;
     background: #050505;
     z-index: 800;
-    height: 110%;
+    height: 120%;
     width: 100%;
     display: table;
 }
@@ -67,7 +67,7 @@ body {
 
 #loader {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 160px;
