@@ -792,10 +792,10 @@ body {
         width: 17px;
         height: 1px;
         background: #DBCCCC;
-        -webkit-transition:  0.3s ease-in-out;
-        -moz-transition:  0.3s ease-in-out;
-        -o-transition: 0.3s ease-in-out;
-        transition:  0.3s ease-in-out;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
     }
 
     &__number {
@@ -808,10 +808,10 @@ body {
         line-height: 137.8%;
         letter-spacing: 1px;
         color: #DBCCCC;
-        -webkit-transition:  0.3s ease-in-out;
-        -moz-transition:  0.3s ease-in-out;
-        -o-transition:  0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
     }
 
     background: #1A1A1A;
