@@ -439,7 +439,8 @@ body {
 
 
         &-text {
-
+            font-family: 'Montserrat';
+            font-style: normal;
             max-width: 423px;
             font-weight: 400;
             font-size: 20px;
@@ -860,6 +861,18 @@ body {
 }
 
 .slider {
+    .spot-2 {
+        z-index: 99;
+        position: absolute;
+        width: 243.17px;
+        height: 267.91px;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 228, 255, 0.6);
+        filter: blur(60px);
+        transform: rotate(-23.73deg);
+    }
+
     &--packing {
         .slider__numbers {
             .spot {
@@ -1799,6 +1812,7 @@ body {
     .form__button-box {
         position: relative;
         max-width: 452px;
+
         .form__button:hover {
             .form__button-arrow {
                 outline: none;
@@ -1816,7 +1830,7 @@ body {
         }
 
         .spot {
-            top:0;
+            top: 0;
             right: 30px;
             position: absolute;
             width: 51.89px;
@@ -1856,11 +1870,13 @@ body {
             font-size: 18px;
             line-height: 137.8%;
         }
-        .form__button-box{
+
+        .form__button-box {
             .spot {
-                right:0;
+                right: 0;
             }
         }
+
         .form__button {
             margin-left: 20px;
         }
@@ -1915,6 +1931,7 @@ body {
     .contacts .form__button-box .spot {
         right: 15px;
     }
+
     .contacts {
         .form__prebutton {
             font-size: 16px;
@@ -2015,7 +2032,8 @@ body {
     .footer__link::after {
         background: #FFAE00;
     }
-    .footer__link.active::after{
+
+    .footer__link.active::after {
         position: absolute;
         content: "";
         width: 100%;
@@ -2029,7 +2047,8 @@ body {
 .footer__link {
     position: relative;
 }
-.footer__link.active::after{
+
+.footer__link.active::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -2038,6 +2057,7 @@ body {
     bottom: 0;
     left: 0;
 }
+
 .footer__link::after {
     position: absolute;
     content: "";

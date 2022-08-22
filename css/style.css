@@ -419,6 +419,8 @@ body {
 }
 
 .header__bottom-text {
+  font-family: 'Montserrat';
+  font-style: normal;
   max-width: 423px;
   font-weight: 400;
   font-size: 20px;
@@ -727,6 +729,20 @@ body {
   background: #1A1A1A;
   height: 100vh;
   position: relative;
+}
+
+.slider .spot-2 {
+  z-index: 99;
+  position: absolute;
+  width: 243.17px;
+  height: 267.91px;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 228, 255, 0.6);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(-23.73deg);
+          transform: rotate(-23.73deg);
 }
 
 .slider--packing .slider__numbers .spot {
