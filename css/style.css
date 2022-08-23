@@ -1530,6 +1530,7 @@ body {
 }
 
 .contacts .form__button {
+  -webkit-tap-highlight-color: transparent;
   margin-left: 34px;
 }
 
