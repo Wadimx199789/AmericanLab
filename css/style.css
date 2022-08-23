@@ -195,9 +195,8 @@ body {
   right: -13px;
   top: -100.7px;
   background: rgba(0, 228, 255, 0.4);
+  filter: blur(110px);
   -webkit-filter: blur(110px);
-          filter: blur(110px);
-  -webkit-backdrop-filter: blur(110px);
   -webkit-transform: rotate(-30deg);
           transform: rotate(-30deg);
 }
@@ -209,9 +208,8 @@ body {
   right: -13px;
   top: -150.19px;
   background: rgba(233, 130, 94, 0.6);
+  filter: blur(100px);
   -webkit-filter: blur(100px);
-          filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -236,9 +234,8 @@ body {
           transform: translateY(-50%);
   top: 587px;
   background: rgba(255, 52, 0, 0.6);
+  filter: blur(110px);
   -webkit-filter: blur(110px);
-          filter: blur(110px);
-  -webkit-backdrop-filter: blur(110px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -264,9 +261,8 @@ body {
     top: -60px;
     width: 173.51px;
     height: 191.17px;
-    -webkit-backdrop-filter: blur(100px);
     -webkit-filter: blur(100px);
-            filter: blur(100px);
+    filter: blur(100px);
   }
   .spot-1 {
     top: -128px;
@@ -282,9 +278,8 @@ body {
     height: 263.2px;
     left: -130px;
     top: 430px;
+    filter: blur(76px);
     -webkit-filter: blur(76px);
-            filter: blur(76px);
-    -webkit-backdrop-filter: blur(76px);
   }
 }
 
@@ -292,27 +287,24 @@ body {
   .spot-1 {
     top: -61px;
     left: -17px;
-    -webkit-backdrop-filter: blur(76px);
     -webkit-filter: blur(76px);
-            filter: blur(76px);
+    filter: blur(76px);
     width: 146px;
     height: 146px;
   }
   .spot-2,
   .spot-4 {
     top: -100px;
-    -webkit-backdrop-filter: blur(86px);
     -webkit-filter: blur(86px);
-            filter: blur(86px);
+    filter: blur(86px);
     width: 171.03px;
     height: 188.43px;
   }
   .spot-3 {
     width: 200.24px;
     height: 220.62px;
-    -webkit-backdrop-filter: blur(90px);
     -webkit-filter: blur(90px);
-            filter: blur(90px);
+    filter: blur(90px);
     top: 320px;
   }
 }
@@ -470,9 +462,8 @@ body {
   height: 57.17px;
   position: absolute;
   background: rgba(0, 228, 255, 0.6);
-  -webkit-backdrop-filter: blur(30px);
   -webkit-filter: blur(30px);
-          filter: blur(30px);
+  filter: blur(30px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -757,9 +748,8 @@ body {
   top: 629px;
   right: -100px;
   background: rgba(0, 228, 255, 0.6);
-  -webkit-backdrop-filter: blur(60px);
   -webkit-filter: blur(60px);
-          filter: blur(60px);
+  filter: blur(60px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -785,9 +775,8 @@ body {
 .slider__numbers .spot {
   position: absolute;
   background: rgba(255, 52, 0, 0.6);
-  -webkit-backdrop-filter: blur(60px);
   -webkit-filter: blur(60px);
-          filter: blur(60px);
+  filter: blur(60px);
   -webkit-transform: rotate(-80.43deg);
           transform: rotate(-80.43deg);
   width: 127.98px;
@@ -917,9 +906,8 @@ body {
   height: 189.51px;
   left: 288px;
   top: 379.21px;
-  -webkit-backdrop-filter: blur(82px);
   -webkit-filter: blur(82px);
-          filter: blur(82px);
+  filter: blur(82px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -932,9 +920,8 @@ body {
   left: 255px;
   top: 377.21px;
   background: #111111;
-  -webkit-backdrop-filter: blur(54px);
   -webkit-filter: blur(54px);
-          filter: blur(54px);
+  filter: blur(54px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -1024,9 +1011,8 @@ body {
   right: -126.73px;
   bottom: -105.1px;
   background: rgba(255, 52, 0, 0.9);
-  -webkit-backdrop-filter: blur(95px);
   -webkit-filter: blur(95px);
-          filter: blur(95px);
+  filter: blur(95px);
   -webkit-transform: rotate(-156.04deg);
   transform: rotate(-156.04deg);
 }
@@ -1697,9 +1683,8 @@ body {
   width: 51.89px;
   height: 57.17px;
   background: rgba(0, 228, 255, 0.6);
+  filter: blur(34px);
   -webkit-filter: blur(34px);
-          filter: blur(34px);
-  -webkit-backdrop-filter: blur(34px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
 }
@@ -2024,9 +2009,8 @@ body {
   left: -200.65px;
   top: 250px;
   background: rgba(0, 228, 255, 0.4);
-  -webkit-backdrop-filter: blur(60px);
   -webkit-filter: blur(60px);
-          filter: blur(60px);
+  filter: blur(60px);
   -webkit-transform: rotate(75deg);
           transform: rotate(75deg);
 }
