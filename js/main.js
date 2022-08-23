@@ -213,13 +213,11 @@
             swipe:true,
             swipeToSlide:true,
             touchMove:true,
-            arrows: false,
-            dots: true,
-            dots: false,
             infinite: true,
-            speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            arrows:false,
         });
 
         //   $('#slider__box').on('init reInit', function (event, slick) {
@@ -231,19 +229,6 @@
         // var currentSlide = 0
 
         $('#slider__box').on('afterChange', function ( e,slick,currentSlide) {
-        //     if(direction=="left"){
-        //         currentSlide+=1
-
-        //         if(currentSlide==3){
-        //             currentSlide=0
-        //         }
-        //     }
-        //    if(direction=="right"){
-        //     currentSlide-=1;
-        //     if(currentSlide==-1){
-        //         currentSlide=2;
-        //     }
-        //    }
             $(numbers).each(function (index, value) {
                 if ($(this).hasClass("active")) {
                     $(this).removeClass("active")
@@ -263,10 +248,14 @@
             }
            
             console.log(currentSlide)
-            $(numbers[currentSlide]).addClass("active")
-        });
-       $(numbers).each(function(index,value){
+            $(numbers[currentSlide]).addClass("active");
 
+        });
+        $(numbers).each(function(index,value){
+            $(this).on("click",function(){
+                value = parseInt($(this).data("value"));
+                $('#slider__box').slick('slickGoTo',value );
+            })
        }) 
 
     //       console.log($(".slider__number"));
