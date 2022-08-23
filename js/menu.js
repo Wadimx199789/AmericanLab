@@ -1,5 +1,5 @@
-const headerMenu = document.querySelector(".header__menu");
-let previosValue=0;
+
+
 
 
 
@@ -18,8 +18,9 @@ let previosValue=0;
 //         document.getElementById("bottommenu").style.bottom = "0";
 //     }
 // }  
-
-let headerHeight = headerMenu.clientHeight;
+window.onload = function(){
+    const headerMenu = document.querySelector(".header__menu");
+    let headerHeight = headerMenu.clientHeight;
 let TopPrev = 0
   window.onscroll = function() {
     var TopCurrent = document.documentElement.scrollTop;
@@ -40,6 +41,8 @@ let TopPrev = 0
     }
     TopPrev = TopCurrent;
   };
+}
+
   
 //   for (let i = 0; i < footerMenuLinks.length; i++) {
   
