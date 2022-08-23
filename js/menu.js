@@ -19,7 +19,7 @@ let previosValue=0;
 //     }
 // }  
 
-let headerHeight = headerMenu.offsetHeight;
+let headerHeight = headerMenu.clientHeight;
 let TopPrev = 0
   window.onscroll = function() {
     var TopCurrent = document.documentElement.scrollTop;
@@ -28,7 +28,8 @@ let TopPrev = 0
         if (TopCurrent > 0 && headerMenu.classList.contains('fixed-menu')) {
             headerMenu.classList.add('visible-scroll-up');
         } else {
-            headerMenu.classList.remove('visible-scroll-up fixed-menu');
+            headerMenu.classList.remove('fixed-menu');
+            headerMenu.classList.remove('visible-scroll-up');
         }
     }
     else {
@@ -37,7 +38,6 @@ let TopPrev = 0
         if (TopCurrent > headerHeight && !headerMenu.classList.contains('fixed-menu')) headerMenu.classList.add('fixed-menu');
     }
     TopPrev = TopCurrent;
-    
   };
   
 //   for (let i = 0; i < footerMenuLinks.length; i++) {
