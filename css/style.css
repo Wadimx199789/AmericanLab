@@ -197,8 +197,8 @@ body {
   background: rgba(0, 228, 255, 0.4);
   filter: blur(110px);
   -webkit-filter: blur(110px);
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-23.73deg);
 }
 
 .spot-4 {
@@ -210,8 +210,8 @@ body {
   background: rgba(233, 130, 94, 0.6);
   filter: blur(100px);
   -webkit-filter: blur(100px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 .spot-1 {
@@ -236,8 +236,8 @@ body {
   background: rgba(255, 52, 0, 0.6);
   filter: blur(110px);
   -webkit-filter: blur(110px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 @media screen and (max-width: 1441px) {
@@ -463,8 +463,8 @@ body {
   background: rgba(0, 228, 255, 0.6);
   -webkit-filter: blur(30px);
   filter: blur(30px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 .header__button {
@@ -749,8 +749,8 @@ body {
   background: rgba(0, 228, 255, 0.6);
   -webkit-filter: blur(60px);
   filter: blur(60px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 .slider--packing .slider__numbers .spot {
@@ -776,8 +776,8 @@ body {
   background: rgba(255, 52, 0, 0.6);
   -webkit-filter: blur(60px);
   filter: blur(60px);
+  transform: rotate(-80.43deg);
   -webkit-transform: rotate(-80.43deg);
-          transform: rotate(-80.43deg);
   width: 127.98px;
   height: 246.32px;
   left: 12%;
@@ -907,8 +907,8 @@ body {
   top: 379.21px;
   -webkit-filter: blur(82px);
   filter: blur(82px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 .prices__box-spot--second {
@@ -921,8 +921,8 @@ body {
   background: #111111;
   -webkit-filter: blur(54px);
   filter: blur(54px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 .prices--packing .prices__box--standart .prices__box-price {
@@ -1651,8 +1651,8 @@ body {
   position: absolute;
   left: 0;
   top: 50%;
+  transform: translateY(-40%);
   -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
 }
 
 .contacts .form__button-box {
@@ -1684,8 +1684,8 @@ body {
   background: rgba(0, 228, 255, 0.6);
   filter: blur(34px);
   -webkit-filter: blur(34px);
+  transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
-          transform: rotate(-23.73deg);
 }
 
 @media screen and (max-width: 1199px) {
