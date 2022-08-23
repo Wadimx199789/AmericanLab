@@ -258,61 +258,7 @@
             })
        }) 
 
-    //       console.log($(".slider__number"));
 
-
-        // $('.slider__box').on('init reInit', function (event, slick) {
-        //     var numbers = $(".slider__number");
-
-        //     if(numbers){
-        //         console.log(numbers)
-        //     }
-        //     else{
-        //         console.log("ybabuf")
-        //     }
-        //     // var amount = slick.slideCount;
-        //     // $('#range').attr('max', amount);
-        // })
-
-        // $('#slider').on('afterChange', function (e, slick, currentSlide) {
-        //     $('#range').val(currentSlide + 1);
-        // })
-
-        // $('#range').on('input change', function () {
-        //     $('#slider').slick('slickGoTo', this.value - 1);
-        // });
-
-        // ---------------------------------------------------------------------
-
-    }
-    //     $('.testimonials').slick({
-    //         arrows: true,
-    //         dots: false,
-    //         infinite: true,
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         adaptiveHeight: true,
-    //         pauseOnFocus: false,
-    //         autoplaySpeed: 1500,
-    //         responsive: [
-    //             {
-    //                 breakpoint: 900,
-    //                 settings: {
-    //                     slidesToShow: 1,
-    //                     slidesToScroll: 1
-    //                 }
-    //             },
-    //             {
-    //                 breakpoint: 800,
-    //                 settings: {
-    //                     arrows: false,
-    //                     dots: true
-    //                 }
-    //             }
-    //         ]
-    //     });
-
-    // };
 
     /* Smooth Scrolling
      * ------------------------------------------------------ */
