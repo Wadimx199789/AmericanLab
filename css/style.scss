@@ -1160,11 +1160,13 @@ body {
 
     }
 }
-.prices--packing{
-    .spot{
+
+.prices--packing {
+    .spot {
         background: rgba(255, 174, 0, 0.8) !important;
     }
 }
+
 .prices {
     background-color: #000;
     padding-top: 88px;
@@ -1172,6 +1174,7 @@ body {
     position: relative;
 
     .spot {
+        z-index: 20;
         position: absolute;
         width: 213.68px;
         height: 235.42px;
@@ -1588,9 +1591,10 @@ body {
     .prices {
         padding-top: 53px;
         padding-bottom: 65px;
-        .spot{
-                width: 153.68px;
-                height: 265.42px;
+
+        .spot {
+            width: 153.68px;
+            height: 265.42px;
         }
     }
 
@@ -1764,6 +1768,17 @@ body {
 .contacts {
     padding-bottom: 97px;
     background-color: #000;
+
+    // .spot-1 {
+    //     position: absolute;
+    //     width: 296.6px;
+    //     height: 326.78px;
+    //     left: -149.65px;
+    //     top:250px;
+    //     background: rgba(0, 228, 255, 0.4);
+    //     filter: blur(200px);
+    //     transform: rotate(75deg);
+    // }
 
     &__title {
         margin-bottom: 36px;
@@ -2216,16 +2231,22 @@ body {
 
 // ---------------------------packing------------------------------//
 
-// .contacts{
-//     &__imge{
-//         &--packing{
-//             .contacts--
-//         }
-//     }
-// }
-.prices {}
+
 
 .contacts {
+    position: relative;
+
+    .spot-1 {
+        position: absolute;
+        width: 296.6px;
+        height: 326.78px;
+        left: -200.65px;
+        top: 250px;
+        background: rgba(0, 228, 255, 0.4);
+        filter: blur(60px);
+        transform: rotate(75deg);
+    }
+
     &__image--packing {
         padding-top: 6px;
 
@@ -2261,6 +2282,12 @@ body {
 
 @media screen and (max-width:767px) {
     .contacts {
+        .spot-1 {
+            position: absolute;
+            width: 196.6px;
+            height: 226.78px;
+            left:-123px;
+        }
         &__image--packing {
             padding-top: 10px;
 

@@ -1001,6 +1001,7 @@ body {
 }
 
 .prices .spot {
+  z-index: 20;
   position: absolute;
   width: 213.68px;
   height: 235.42px;
@@ -1993,6 +1994,23 @@ body {
   }
 }
 
+.contacts {
+  position: relative;
+}
+
+.contacts .spot-1 {
+  position: absolute;
+  width: 296.6px;
+  height: 326.78px;
+  left: -200.65px;
+  top: 250px;
+  background: rgba(0, 228, 255, 0.4);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
 .contacts__image--packing {
   padding-top: 6px;
 }
@@ -2020,6 +2038,12 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .contacts .spot-1 {
+    position: absolute;
+    width: 196.6px;
+    height: 226.78px;
+    left: -123px;
+  }
   .contacts__image--packing {
     padding-top: 10px;
   }
