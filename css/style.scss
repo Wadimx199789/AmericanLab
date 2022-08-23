@@ -861,6 +861,9 @@ body {
 }
 
 .slider {
+    &__slide{
+        cursor:pointer;
+    }
     .spot-2 {
         z-index: 99;
         position: absolute;

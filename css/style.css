@@ -731,6 +731,10 @@ body {
   position: relative;
 }
 
+.slider__slide {
+  cursor: pointer;
+}
+
 .slider .spot-2 {
   z-index: 99;
   position: absolute;
