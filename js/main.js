@@ -120,7 +120,7 @@
                 $height = $size[1];
 
             var item = {
-                src: $href;,
+                src: $href,
                 w: $width,
                 h: $height
             }

@@ -65,28 +65,28 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 160px;
-  height: 160px;
+  width: 240px;
+  height: 240px;
 }
 
 @media screen and (max-width: 1441px) {
   #loader {
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
   }
 }
 
 @media screen and (max-width: 1025px) {
   #loader {
-    width: 90px;
-    height: 90px;
+    width: 1600px;
+    height: 160px;
   }
 }
 
 @media screen and (max-width: 769px) {
   #loader {
-    width: 78px;
-    height: 78px;
+    width: 120px;
+    height: 120px;
   }
 }
 
