@@ -78,7 +78,7 @@ body {
 
 @media screen and (max-width: 1025px) {
   #loader {
-    width: 1600px;
+    width: 160px;
     height: 160px;
   }
 }
@@ -923,6 +923,11 @@ body {
           filter: blur(54px);
   -webkit-transform: rotate(-23.73deg);
           transform: rotate(-23.73deg);
+}
+
+.prices--packing .prices__box {
+  overflow: hidden !important;
+  border-radius: 20px;
 }
 
 .prices--packing .prices__box--standart .prices__box-price {
