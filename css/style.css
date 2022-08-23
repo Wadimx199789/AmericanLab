@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Montserrat:wght@400;500;600&display=swap");
-* {
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  -webkit-user-select: none;
-}
-
 html {
   font-size: 20px;
   -webkit-box-sizing: border-box;
@@ -930,6 +923,12 @@ body {
   filter: blur(54px);
   transform: rotate(-23.73deg);
   -webkit-transform: rotate(-23.73deg);
+}
+
+.prices--packing .prices__box {
+  z-index: 99 !important;
+  border-radius: 20px;
+  overflow: hidden !important;
 }
 
 .prices--packing .prices__box--standart .prices__box-price {

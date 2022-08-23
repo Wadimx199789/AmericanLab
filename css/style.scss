@@ -2,12 +2,6 @@
 
 
 
-* {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-    -webkit-user-select: none;
-}
 
 
 
@@ -1119,6 +1113,10 @@ body {
 
 .prices--packing {
     .prices__box {
+        z-index: 99 !important;
+        -webkit-border-radius:20px;
+        border-radius: 20px;
+        overflow: hidden !important;
         &--standart {
             .prices__box-price {
                 color: #FFD373;
@@ -1130,6 +1128,7 @@ body {
 
 
             &::before {
+                -webkit-border-radius:20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
@@ -1155,6 +1154,7 @@ body {
             }
 
             &::before {
+                -webkit-border-radius:20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
@@ -1181,6 +1181,7 @@ body {
             }
 
             &::before {
+                -webkit-border-radius:20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
