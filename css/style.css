@@ -1027,7 +1027,9 @@ body {
 }
 
 .prices__box {
-  overflow: hidden;
+  z-index: 99 !important;
+  border-radius: 20px;
+  overflow: hidden !important;
   border-radius: 20px;
   border-image-slice: 1;
   position: relative;
