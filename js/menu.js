@@ -28,8 +28,9 @@ let TopPrev = 0
         if (TopCurrent > 0 && headerMenu.classList.contains('fixed-menu')) {
             headerMenu.classList.add('visible-scroll-up');
         } else {
-            headerMenu.classList.remove('fixed-menu');
+            
             headerMenu.classList.remove('visible-scroll-up');
+            headerMenu.classList.remove('fixed-menu');
         }
     }
     else {

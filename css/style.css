@@ -2030,8 +2030,8 @@ body {
 }
 
 .header__menu {
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transform: translate3d(0px, 0px, 0px);
