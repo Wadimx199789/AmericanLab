@@ -1,23 +1,4 @@
 
-
-
-
-
-// function getCoords(block) {
-//     let box = block.getBoundingClientRect();
-//     return {
-//       top: box.top,
-//       left: box.left
-//     };
-//   }
-  
-//   function bringmenu() {
-//     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-//         document.getElementById("bottommenu").style.bottom = "-100%";
-//     } else {
-//         document.getElementById("bottommenu").style.bottom = "0";
-//     }
-// }  
 window.onload = function(){
     const headerMenu = document.querySelector(".header__menu");
     let headerHeight = headerMenu.clientHeight;

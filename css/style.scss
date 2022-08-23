@@ -550,6 +550,11 @@ body {
 
 @media screen and (max-width:1199px) {
 
+    .header__button-box .spot {
+        top: -5px;
+        right: 42px;
+    }
+
     .header {
         &__button-box {
             position: relative;
@@ -601,7 +606,7 @@ body {
         }
 
         &__button-box {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 137.8%;
         }
 
@@ -1155,15 +1160,30 @@ body {
 
     }
 }
-
+.prices--packing{
+    .spot{
+        background: rgba(255, 174, 0, 0.8) !important;
+    }
+}
 .prices {
     background-color: #000;
     padding-top: 88px;
     padding-bottom: 145px;
     position: relative;
-    .spot{
-        
+
+    .spot {
+        position: absolute;
+        width: 213.68px;
+        height: 235.42px;
+        right: -126.73px;
+        bottom: -105.1px;
+        background: rgba(255, 52, 0, 0.9);
+        -webkit-filter: blur(40px);
+        filter: blur(95px);
+        -webkit-transform: rotate(-156.04deg);
+        transform: rotate(-156.04deg);
     }
+
     &__title {
         margin-bottom: 51px;
     }
@@ -1568,6 +1588,10 @@ body {
     .prices {
         padding-top: 53px;
         padding-bottom: 65px;
+        .spot{
+                width: 153.68px;
+                height: 265.42px;
+        }
     }
 
     .prices__box:first-child {

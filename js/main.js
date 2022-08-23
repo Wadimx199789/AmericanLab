@@ -209,7 +209,7 @@
      * ------------------------------------------------------ */
     var clSlickSlider = function () {
         $('.slider__box').slick({
-            touchThreshold: 50,
+            touchThreshold: 100,
             swipe:true,
             swipeToSlide:true,
             touchMove:true,
