@@ -1162,7 +1162,7 @@ body {
 }
 
 .prices__box-contact {
-  z-index: 99;
+  z-index: 300 !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
