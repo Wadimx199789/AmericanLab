@@ -2265,7 +2265,7 @@ body {
 .header__menu.fixed-menu {
   background-color: #1a1a1a;
   position: fixed;
-  top: -90px;
+  top: -190px;
   padding-bottom:5px;
   transition: transform 0.3s ease 0s;
   -webkit-transition: transform 0.3s ease 0s;
@@ -2286,11 +2286,11 @@ body {
 
 @media screen and (max-width:991px){
     .header__menu.fixed-menu{
-        top:-74px;
+        top:-174px;
     }
 }
 @media screen and (max-width:767px){
     .header__menu.fixed-menu{
-        top:-64px;
+        top:-164px;
     }
 }
