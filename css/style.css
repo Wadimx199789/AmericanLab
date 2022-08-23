@@ -740,8 +740,8 @@ body {
   position: absolute;
   width: 243.17px;
   height: 267.91px;
-  bottom: 0;
-  right: 0;
+  top: 629px;
+  right: -100px;
   background: rgba(0, 228, 255, 0.6);
   -webkit-filter: blur(60px);
           filter: blur(60px);
@@ -845,6 +845,12 @@ body {
   .slider__numbers {
     -webkit-column-gap: 2px;
             column-gap: 2px;
+  }
+  .slider .spot-2 {
+    top: 765px;
+    right: -47px;
+    width: 152.05px;
+    height: 167.53px;
   }
   .slider .spot {
     width: 112.33px;

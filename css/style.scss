@@ -861,16 +861,17 @@ body {
 }
 
 .slider {
-    &__slide{
-        cursor:pointer;
+    &__slide {
+        cursor: pointer;
     }
+
     .spot-2 {
         z-index: 99;
         position: absolute;
         width: 243.17px;
         height: 267.91px;
-        bottom: 0;
-        right: 0;
+        top: 629px;
+        right: -100px;
         background: rgba(0, 228, 255, 0.6);
         filter: blur(60px);
         transform: rotate(-23.73deg);
@@ -982,6 +983,13 @@ body {
     }
 
     .slider {
+        .spot-2 {
+            top: 765px;
+            right: -47px;
+            width: 152.05px;
+            height: 167.53px;
+        }
+
         .spot {
             width: 112.33px;
             height: 216.2px;
@@ -2262,35 +2270,38 @@ body {
     -ms-transform: translate3d(0px, 100%, 0px);
     -o-transform: translate3d(0px, 100%, 0px);
 }
+
 .header__menu.fixed-menu {
-  background-color: #1a1a1a;
-  position: fixed;
-  top: -90px;
-  padding-bottom:5px;
-  transition: transform 0.3s ease 0s;
-  -webkit-transition: transform 0.3s ease 0s;
-  -moz-transition: transform 0.3s ease 0s;
-  -ms-transition: transform 0.3s ease 0s;
-  -o-transition: transform 0.3s ease 0s;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: -90px;
+    padding-bottom: 5px;
+    transition: transform 0.3s ease 0s;
+    -webkit-transition: transform 0.3s ease 0s;
+    -moz-transition: transform 0.3s ease 0s;
+    -ms-transition: transform 0.3s ease 0s;
+    -o-transition: transform 0.3s ease 0s;
 }
-.header__menu{
-    transition:background-color .4s;
+
+.header__menu {
+    transition: background-color .4s;
     backface-visibility: hidden;
     transform: translate3d(0px, 0px, 0px);
     -webkit-transform: translate3d(0px, 0px, 0px);
     -moz-transform: translate3d(0px, 0px, 0px);
     -ms-transform: translate3d(0px, 0px, 0px);
     -o-transform: translate3d(0px, 0px, 0px);
-  
+
 }
 
-@media screen and (max-width:991px){
-    .header__menu.fixed-menu{
-        top:-74px;
+@media screen and (max-width:991px) {
+    .header__menu.fixed-menu {
+        top: -74px;
     }
 }
-@media screen and (max-width:767px){
-    .header__menu.fixed-menu{
-        top:-64px;
+
+@media screen and (max-width:767px) {
+    .header__menu.fixed-menu {
+        top: -64px;
     }
 }
