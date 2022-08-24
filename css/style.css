@@ -1651,6 +1651,12 @@ body {
   padding-left: 30px;
 }
 
+.contacts .form__button:focus, .contacts .form__button:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .contacts .form__button-arrow {
   outline: none;
   position: absolute;
