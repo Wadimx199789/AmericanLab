@@ -1011,6 +1011,7 @@ body {
 }
 
 .prices .spot {
+  pointer-events: none !important;
   z-index: 20;
   position: absolute;
   width: 213.68px;
@@ -1686,6 +1687,7 @@ body {
 }
 
 .contacts .form__button-box .spot {
+  pointer-events: none !important;
   top: 0;
   right: 30px;
   position: absolute;
