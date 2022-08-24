@@ -1640,6 +1640,7 @@ body {
 }
 
 .contacts .form__button {
+  z-index: 99;
   padding-right: 0px;
   overflow: hidden;
   position: relative;
@@ -1680,7 +1681,7 @@ body {
 }
 
 .contacts .form__button-box .spot {
-  z-index: 100;
+  z-index: 100 !important;
   pointer-events: none !important;
   top: 0;
   right: 30px;
