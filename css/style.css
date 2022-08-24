@@ -1012,14 +1012,14 @@ body {
 
 .prices .spot {
   pointer-events: none !important;
-  z-index: 1;
+  z-index: 600;
   position: absolute;
   width: 213.68px;
   height: 235.42px;
   right: -126.73px;
   bottom: -105.1px;
   background: rgba(255, 52, 0, 0.9);
-  -webkit-filter: blur(95px);
+  -webkit-filter: blur(85px);
   filter: blur(95px);
   -webkit-transform: rotate(-156.04deg);
   transform: rotate(-156.04deg);
