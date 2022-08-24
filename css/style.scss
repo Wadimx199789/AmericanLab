@@ -1135,7 +1135,13 @@ body {
                 background: rgba(255, 211, 115, 0.85);
             }
 
+            // В Сафари синтаксис другой.
 
+            // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Safari4+ */
+            
+            // background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Safari5.1+ */
+            
+            
             &::before {
                 -webkit-border-radius:20px;
                 border-radius: 20px;
@@ -1144,9 +1150,9 @@ body {
                 inset: 0;
                 padding: 2px;
                 background: linear-gradient(60deg, #1a1a1a, #FFD373);
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
+                // -webkit-mask: -webkit-gradient(top,#fff 0%) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+                // -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                // -webkit-mask-composite: xor;
                 mask-composite: exclude;
                 overflow: hidden;
 
@@ -1170,9 +1176,9 @@ body {
                 inset: 0;
                 padding: 2px;
                 background: linear-gradient(60deg, #1a1a1a, #FFAE00);
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
+                // -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+                // -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                // -webkit-mask-composite: xor;
                 mask-composite: exclude;
                 overflow: hidden;
 
@@ -1197,9 +1203,9 @@ body {
                 inset: 0;
                 padding: 2px;
                 background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
+                // -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+                // -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                // -webkit-mask-composite: xor;
                 mask-composite: exclude;
                 overflow: hidden;
 
@@ -1502,6 +1508,9 @@ body {
 }
 
 @media screen and (max-width:1199px) {
+    .prices__box-contact span {
+        margin-right: 2px;
+    }
     .prices {
         padding-top: 80px;
         padding-bottom: 102px;
@@ -1537,9 +1546,6 @@ body {
                     height: 10px;
                 }
 
-                li {
-                    
-                }
 
                 span {
                     margin-left: 11px;
@@ -1553,7 +1559,6 @@ body {
             }
 
             &-contact {
-                margin-right:2px;
 
                 span {
                     z-index: 20;
@@ -1627,9 +1632,10 @@ body {
             }
 
             &-contact {
-                column-gap: 4px;
+                
 
                 span {
+                    margin-right: 4px;
                     font-size: 20px;
                     line-height: 1px;
                 }
@@ -1703,9 +1709,10 @@ body {
             }
 
             &-contact {
-                column-gap: 4px;
+
 
                 span {
+                    margin-right: 4px;
                     font-size: 16px;
                     line-height: 0.5px;
                 }
