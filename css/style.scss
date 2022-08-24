@@ -500,7 +500,7 @@ body {
             -webkit-transform: rotate(-23.73deg);
         }
 
-        column-gap: 27px;
+        
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -508,6 +508,9 @@ body {
         line-height: 137.8%;
         letter-spacing: 1px;
         color: #FFFFFF;
+        span{
+            margin-right: 27px;
+        }
     }
 
     &__button {
@@ -648,7 +651,9 @@ body {
 
         &--packing {
             .header__button-box {
-                column-gap: 62px;
+                span{
+                    margin-right: 62px;
+                }
                 max-width: 352px;
 
                 .spot {
@@ -724,7 +729,9 @@ body {
         &--packing {
 
             .header__button-box {
-                column-gap: 27px;
+               span{
+                margin-right: 27px;
+               }
                 max-width: 272px;
 
                 .spot {
