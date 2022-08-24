@@ -1194,7 +1194,7 @@ body {
 }
 
 .prices__box-arrow {
-  z-index: 1;
+  z-index: 4;
   position: absolute;
   outline: none;
   left: 0;
@@ -1440,8 +1440,8 @@ body {
     padding-left: 18px;
   }
   .prices__box-spot--first {
-    left: 201px;
-    top: 382.21px;
+    left: 166px;
+    top: 256.21px;
   }
   .prices__box-spot--second {
     left: 90px;
