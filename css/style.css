@@ -1018,11 +1018,18 @@ body {
   height: 235.42px;
   right: -126.73px;
   bottom: -105.1px;
+  transform: rotate(-156.04deg);
+  -webkit-transform: rotate(-156.04deg);
+}
+
+.prices .spot::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(95px);
   background: rgba(255, 52, 0, 0.9);
   -webkit-filter: blur(95px);
-  filter: blur(95px);
-  -webkit-transform: rotate(-156.04deg);
-  transform: rotate(-156.04deg);
 }
 
 .prices__title {
