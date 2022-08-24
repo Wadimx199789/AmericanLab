@@ -1966,18 +1966,22 @@ body {
         }
 
         .spot {
-            z-index: 100 !important;
-            pointer-events: none !important;
-            top: 0;
-            right: 30px;
+            // z-index: 100 !important;
+            // pointer-events: none !important;
+            top: -35px;
+            right: -2px;
             position: absolute;
-            width: 51.89px;
-            height: 57.17px;
-            background: rgba(0, 228, 255, 0.6);
-            filter: blur(34px);
-            -webkit-filter: blur(34px);
-            transform: rotate(-23.73deg);
-            -webkit-transform: rotate(-23.73deg);
+            width: 125.89px;
+            height: -22.83px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            // background: rgba(0, 228, 255, 0.6);
+            // filter: blur(34px);
+            // -webkit-filter: blur(34px);
+            // transform: rotate(-23.73deg);
+            // -webkit-transform: rotate(-23.73deg);
         }
     }
 }
@@ -2013,7 +2017,7 @@ body {
 
         .form__button-box {
             .spot {
-                right: 0;
+                right: -34px;
             }
         }
 
@@ -2069,7 +2073,7 @@ body {
 
 @media screen and (max-width:575px) {
     .contacts .form__button-box .spot {
-        right: 15px;
+        right: -14px;
     }
 
     .contacts {
