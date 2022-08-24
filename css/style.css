@@ -1640,7 +1640,7 @@ body {
 }
 
 .contacts .form__button {
-  z-index: 99;
+  z-index: 120 !important;
   padding-right: 0px;
   overflow: hidden;
   position: relative;
