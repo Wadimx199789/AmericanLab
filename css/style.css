@@ -899,6 +899,7 @@ body {
 }
 
 .prices__box-spot--first {
+  pointer-events: none !important;
   z-index: 3;
   position: absolute;
   width: 172.01px;
@@ -912,6 +913,7 @@ body {
 }
 
 .prices__box-spot--second {
+  pointer-events: none !important;
   z-index: 2;
   position: absolute;
   width: 171.77px;
