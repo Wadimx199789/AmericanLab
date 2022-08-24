@@ -1412,7 +1412,9 @@ body {
             letter-spacing: 1px;
             color: #FFFFFF;
             display: flex;
-            column-gap: 12px;
+            span{
+                margin-right: 12px;
+            }
 
             a {
                 z-index: 100;
@@ -1551,7 +1553,7 @@ body {
             }
 
             &-contact {
-                column-gap: 2px;
+                margin-right:2px;
 
                 span {
                     z-index: 20;
@@ -1788,7 +1790,9 @@ body {
     }
 
     .prices__box-contact {
-        column-gap: 40px;
+       span{
+        margin-right: 40px;
+       }
     }
 
     .prices__box-button {
