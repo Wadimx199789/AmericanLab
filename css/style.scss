@@ -1956,6 +1956,7 @@ body {
         }
 
         .spot {
+            z-index: 100;
             pointer-events: none !important;
             top: 0;
             right: 30px;
