@@ -1003,10 +1003,6 @@ body {
   overflow: hidden;
 }
 
-.prices--packing .spot {
-  background: rgba(255, 174, 0, 0.8) !important;
-}
-
 .prices {
   background-color: #000;
   padding-top: 88px;
@@ -1015,18 +1011,12 @@ body {
 }
 
 .prices .spot {
-  pointer-events: none !important;
   z-index: 600;
   position: absolute;
-  width: 213.68px;
-  height: 235.42px;
-  right: -126.73px;
-  bottom: -105.1px;
-  background: rgba(255, 52, 0, 0.9);
-  -webkit-filter: blur(85px);
-  filter: blur(95px);
-  -webkit-transform: rotate(-156.04deg);
-  transform: rotate(-156.04deg);
+  width: 571.68px;
+  height: 306.42px;
+  right: -348.73px;
+  bottom: -26.1px;
 }
 
 .prices__title {
@@ -1402,8 +1392,7 @@ body {
     padding-bottom: 65px;
   }
   .prices .spot {
-    width: 153.68px;
-    height: 265.42px;
+    bottom: 100.9px;
   }
   .prices__box:first-child {
     margin-bottom: 27px;
@@ -1495,6 +1484,9 @@ body {
   }
   .prices__box-services li span {
     margin-left: 20px;
+  }
+  .prices .spot {
+    bottom: 0;
   }
   .prices__box-contact span {
     margin-right: 40px;

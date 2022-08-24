@@ -1221,11 +1221,7 @@ body {
     }
 }
 
-.prices--packing {
-    .spot {
-        background: rgba(255, 174, 0, 0.8) !important;
-    }
-}
+
 
 .prices {
     background-color: #000;
@@ -1234,18 +1230,12 @@ body {
     position: relative;
 
     .spot {
-        pointer-events: none !important;
         z-index: 600;
         position: absolute;
-        width: 213.68px;
-        height: 235.42px;
-        right: -126.73px;
-        bottom: -105.1px;
-        background: rgba(255, 52, 0, 0.9);
-        -webkit-filter: blur(85px);
-        filter: blur(95px);
-        -webkit-transform: rotate(-156.04deg);
-        transform: rotate(-156.04deg);
+        width: 571.68px;
+        height: 306.42px;
+        right: -348.73px;
+        bottom: -26.1px;
     }
 
     &__title {
@@ -1665,9 +1655,8 @@ body {
         padding-top: 53px;
         padding-bottom: 65px;
 
-        .spot {
-            width: 153.68px;
-            height: 265.42px;
+        .spot{
+            bottom: 100.9px;
         }
     }
 
@@ -1799,6 +1788,9 @@ body {
 
             }
 
+        }
+        .spot{
+            bottom:0;
         }
     }
 
