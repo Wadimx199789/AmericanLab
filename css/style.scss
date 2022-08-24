@@ -1228,9 +1228,11 @@ body {
     padding-top: 88px;
     padding-bottom: 145px;
     position: relative;
-
+    &__box-contact span {
+        z-index: 100;
+    }
     .spot {
-        z-index: 600;
+        z-index: 3;
         position: absolute;
         width: 571.68px;
         height: 306.42px;
