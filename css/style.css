@@ -1138,8 +1138,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 17px;
-          column-gap: 17px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -1147,6 +1145,10 @@ body {
   line-height: 20px;
   letter-spacing: 0.5px;
   color: #BBB6AC;
+}
+
+.prices__box-services li span {
+  margin-left: 17px;
 }
 
 .prices__box-services li:not(:last-child) {
@@ -1305,11 +1307,8 @@ body {
     width: 13px;
     height: 10px;
   }
-  .prices__box-services li {
-    -webkit-column-gap: 11px;
-            column-gap: 11px;
-  }
   .prices__box-services span {
+    margin-left: 11px;
     z-index: 20;
     font-size: 15px;
     line-height: 18px;
@@ -1367,11 +1366,8 @@ body {
   .prices__box-services {
     margin-bottom: 101px;
   }
-  .prices__box-services li {
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
-  }
   .prices__box-services span {
+    margin-left: 10px;
     z-index: 20;
     font-size: 16px;
     line-height: 20px;
@@ -1432,10 +1428,6 @@ body {
   .prices__box-services {
     margin-bottom: 31px;
   }
-  .prices__box-services li {
-    -webkit-column-gap: 10px;
-            column-gap: 10px;
-  }
   .prices__box-services span {
     font-size: 14px;
     line-height: 17px;
@@ -1495,13 +1487,12 @@ body {
   .prices__box-services {
     margin-bottom: 82px;
   }
-  .prices__box-services li {
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-  }
   .prices__box-services li svg {
     width: 10px;
     height: 8px;
+  }
+  .prices__box-services li span {
+    margin-left: 20px;
   }
   .prices__box-contact {
     -webkit-column-gap: 40px;

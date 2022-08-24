@@ -1366,7 +1366,6 @@ body {
             li {
                 display: flex;
                 align-items: center;
-                column-gap: 17px;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
@@ -1374,6 +1373,9 @@ body {
                 line-height: 20px;
                 letter-spacing: 0.5px;
                 color: #BBB6AC;
+                span{
+                    margin-left: 17px;
+                }
             }
 
             li:not(:last-child) {
@@ -1527,10 +1529,11 @@ body {
                 }
 
                 li {
-                    column-gap: 11px;
+                    
                 }
 
                 span {
+                    margin-left: 11px;
                     z-index: 20;
                     font-size: 15px;
                     line-height: 18px;
@@ -1601,11 +1604,10 @@ body {
             &-services {
                 margin-bottom: 101px;
 
-                li {
-                    column-gap: 10px;
-                }
+              
 
                 span {
+                    margin-left: 10px;
                     z-index: 20;
                     font-size: 16px;
                     line-height: 20px;
@@ -1682,9 +1684,7 @@ body {
             &-services {
                 margin-bottom: 31px;
 
-                li {
-                    column-gap: 10px;
-                }
+    
 
                 span {
                     font-size: 14px;
@@ -1768,7 +1768,9 @@ body {
                         height: 8px;
                     }
 
-                    column-gap: 20px;
+                   span{
+                    margin-left: 20px;
+                   }
                 }
 
 
