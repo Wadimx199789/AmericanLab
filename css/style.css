@@ -1019,8 +1019,10 @@ body {
   inset: 0;
   padding: 2px;
   background: linear-gradient(60deg, #1a1a1a, #FFD373);
-  -webkit-mask-composite: exclude;
-          mask-composite: exclude;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   overflow: hidden;
 }
 
