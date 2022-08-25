@@ -467,6 +467,7 @@ body {
 .header__button-box {
   position: relative;
   max-width: 440px;
+  cursor: pointer;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -474,6 +475,16 @@ body {
   line-height: 137.8%;
   letter-spacing: 1px;
   color: #FFFFFF;
+}
+
+.header__button-box:hover .header__button-arrow {
+  outline: none;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .header__button-box .spot {
@@ -1186,6 +1197,7 @@ body {
 }
 
 .prices__box-contact {
+  cursor: pointer;
   z-index: 300 !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1200,6 +1212,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.prices__box-contact:hover .prices__box-arrow {
+  outline: none;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .prices__box-contact span {
@@ -1708,8 +1730,19 @@ body {
 }
 
 .contacts .form__button-box {
+  cursor: pointer;
   position: relative;
   max-width: 452px;
+}
+
+.contacts .form__button-box:hover .form__button-arrow {
+  outline: none;
+  -webkit-animation-name: moveToRight;
+          animation-name: moveToRight;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 .contacts .form__button-box .form__button:hover .form__button-arrow {

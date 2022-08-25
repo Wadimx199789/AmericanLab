@@ -539,6 +539,15 @@ body {
     &__button-box {
         position: relative;
         max-width: 440px;
+        cursor: pointer;
+        &:hover{
+            .header__button-arrow {
+                outline: none;
+                animation-name: moveToRight;
+                animation-duration: 1000ms;
+                animation-timing-function: ease;
+            }
+        }
 
         .spot {
             top: -5px;
@@ -563,6 +572,7 @@ body {
         color: #FFFFFF;
 
         span {
+           
             margin-right: 27px;
         }
     }
@@ -1543,6 +1553,15 @@ body {
         }
 
         &-contact {
+            cursor:pointer;
+            &:hover{
+                .prices__box-arrow {
+                    outline: none;
+                    animation-name: moveToRight;
+                    animation-duration: 1000ms;
+                    animation-timing-function: ease;
+                }
+            }
             z-index: 300 !important;
             align-items: center;
             font-family: 'Montserrat';
@@ -2107,6 +2126,15 @@ body {
     }
 
     .form__button-box {
+        cursor: pointer;
+        &:hover{
+            .form__button-arrow {
+                outline: none;
+                animation-name: moveToRight;
+                animation-duration: 1000ms;
+                animation-timing-function: ease;
+            }
+        }
         position: relative;
         max-width: 452px;
 
