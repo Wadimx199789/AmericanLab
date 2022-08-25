@@ -407,11 +407,11 @@ body {
 
 .header--packing {
     .header__menu-link.active::after {
-        background: #FFAE00;
+        background: rgba(255, 174, 0, 1);
     }
 
     .header__menu-link::after {
-        background: #FFAE00;
+        background: rgba(255, 174, 0, 1);
     }
 
 }
@@ -421,7 +421,7 @@ body {
     content: "";
     width: 100%;
     height: 1px;
-    background: #FF3400;
+    background: rgba(255, 52, 0, 1);
     bottom: 0;
     left: 0;
 }
@@ -431,7 +431,7 @@ body {
     content: "";
     width: 0%;
     height: 1px;
-    background: #FF3400;
+    background: rgba(255, 52, 0, 1);
     bottom: 0;
     left: 0;
     transform-origin: left;
@@ -1075,7 +1075,7 @@ body {
         transition: font-size 0.5s;
     }
 
-    background: #1A1A1A;
+    background: rgba(26, 26, 26, 1);
     height: 100vh;
     position: relative;
 
@@ -1231,7 +1231,7 @@ body {
 
         &--standart {
             .prices__box-price {
-                color: #FFD373;
+                color: rgba(255, 211, 115, 1);;
             }
 
             .prices__box-spot--first {
@@ -1252,7 +1252,7 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #FFD373);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 211, 115, 1));
                 -webkit-mask: -webkit-gradient(top,#fff 0%) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1264,7 +1264,7 @@ body {
 
         &--business {
             .prices__box-price {
-                color: #FFAE00;
+                color: rgba(255, 174, 0, 1);
             }
 
             .prices__box-spot--first {
@@ -1278,8 +1278,8 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #FFAE00);
-                background: -webkit-linear-gradient(60deg, #1a1a1a, #FFAE00);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
+                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1292,7 +1292,7 @@ body {
 
         &--premium {
             .prices__box-price {
-                color: #00E4FF;
+                color: rgba(0, 228, 255, 1);;
             }
 
             .prices__box-spot--first {
@@ -1306,8 +1306,8 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-                background: -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
 
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -1356,7 +1356,7 @@ body {
         overflow: hidden;
         border-image-slice: 1;
         position: relative;
-        background-image: linear-gradient(206.1deg, #1A1A1A 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
+        background-image: linear-gradient(206.1deg, rgba(26, 26, 26, 1) 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
         padding-left: 65px;
         padding-top: 32px;
         padding-bottom: 75px;
@@ -1368,8 +1368,8 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #E9825E);
-                background: -webkit-linear-gradient(60deg, #1a1a1a, #E9825E);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
+                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1386,8 +1386,8 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #FF3400);
-                background: -webkit-linear-gradient(60deg, #1a1a1a, #FF3400);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
+                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1404,8 +1404,8 @@ body {
                 position: absolute;
                 inset: 0;
                 padding: 2px;
-                background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-                background: -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1422,7 +1422,7 @@ body {
         }
 
         position: relative;
-        background-image: linear-gradient(206.1deg, #1A1A1A 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
+        background-image: linear-gradient(206.1deg, rgba(26, 26, 26, 1) 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
         padding-left: 65px;
         padding-top: 32px;
 
@@ -1444,7 +1444,7 @@ body {
 
         &--business {
             .prices__box-price {
-                color: #FF3400;
+                color: rgba(255, 52, 0, 1);
             }
 
             .prices__box-spot--first {
@@ -1455,7 +1455,7 @@ body {
 
         &--premium {
             .prices__box-price {
-                color: #00E4FF;
+                color: rgba(0, 228, 255, 1);;
             }
 
             .prices__box-spot--first {
@@ -1959,7 +1959,7 @@ body {
     input:focus:not([type=submit]),
     textarea:focus {
         outline: none;
-        border-bottom: 2px solid #FFAE00 !important;
+        border-bottom: 2px solid rgba(255, 174, 0, 1) !important;
     }
 
     .contactForm__box {
@@ -2030,7 +2030,7 @@ body {
     input:focus:not([type=submit]),
     textarea:focus {
         outline: none;
-        border-bottom: 2px solid #FF3400;
+        border-bottom: 2px solid rgba(255, 52, 0, 1);
     }
 
     textarea {
@@ -2249,7 +2249,7 @@ body {
         padding: 0 10px;
         margin: 0;
         color: #FFFFFF;
-        background: #FFAE00;
+        background: rgba(255, 174, 0, 1);
         ;
     }
 
@@ -2261,7 +2261,7 @@ body {
         margin-top: -6px;
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
-        border-right: 5px solid #FFAE00;
+        border-right: 5px solid rgba(255, 174, 0, 1);
 
     }
 }
@@ -2278,7 +2278,7 @@ body {
     padding: 0 10px;
     margin: 0;
     color: #FFFFFF;
-    background: #FF3400;
+    background: rgba(255, 52, 0, 1);
 }
 
 .form-field #contactMessage-error {
@@ -2293,7 +2293,7 @@ body {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #FF3400;
+    border-right: 5px solid rgba(255, 52, 0, 1);
 
 }
 
@@ -2306,7 +2306,7 @@ body {
 
 .footer--packing {
     .footer__link::after {
-        background: #FFAE00;
+        background: rgba(255, 174, 0, 1);
     }
 
     .footer__link.active::after {
@@ -2314,7 +2314,7 @@ body {
         content: "";
         width: 100%;
         height: 1px;
-        background: #FFAE00;
+        background: rgba(255, 174, 0, 1);
         bottom: 0;
         left: 0;
     }
@@ -2329,7 +2329,7 @@ body {
     content: "";
     width: 100%;
     height: 1px;
-    background: #FF3400;
+    background: rgba(255, 52, 0, 1);
     bottom: 0;
     left: 0;
 }
@@ -2339,7 +2339,7 @@ body {
     content: "";
     width: 0%;
     height: 1px;
-    background: #FF3400;
+    background: rgba(255, 52, 0, 1);
     bottom: 0;
     left: 0;
     transition: .5s;
@@ -2551,7 +2551,7 @@ body {
 }
 
 .header__menu.fixed-menu {
-    background-color: #1a1a1a;
+    background-color: rgba(26, 26, 26, 1);
     position: fixed;
     top: -90px;
     padding-bottom: 5px;

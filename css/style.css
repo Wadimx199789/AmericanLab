@@ -344,11 +344,11 @@ body {
 }
 
 .header--packing .header__menu-link.active::after {
-  background: #FFAE00;
+  background: #ffae00;
 }
 
 .header--packing .header__menu-link::after {
-  background: #FFAE00;
+  background: #ffae00;
 }
 
 .header__menu-link.active::after {
@@ -356,7 +356,7 @@ body {
   content: "";
   width: 100%;
   height: 1px;
-  background: #FF3400;
+  background: #ff3400;
   bottom: 0;
   left: 0;
 }
@@ -366,7 +366,7 @@ body {
   content: "";
   width: 0%;
   height: 1px;
-  background: #FF3400;
+  background: #ff3400;
   bottom: 0;
   left: 0;
   -webkit-transform-origin: left;
@@ -802,7 +802,7 @@ body {
 }
 
 .slider {
-  background: #1A1A1A;
+  background: #1a1a1a;
   height: 100vh;
   position: relative;
 }
@@ -1005,7 +1005,7 @@ body {
 }
 
 .prices--packing .prices__box--standart .prices__box-price {
-  color: #FFD373;
+  color: #ffd373;
 }
 
 .prices--packing .prices__box--standart .prices__box-spot--first {
@@ -1018,7 +1018,7 @@ body {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #FFD373);
+  background: linear-gradient(60deg, #1a1a1a, #ffd373);
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1027,7 +1027,7 @@ body {
 }
 
 .prices--packing .prices__box--business .prices__box-price {
-  color: #FFAE00;
+  color: #ffae00;
 }
 
 .prices--packing .prices__box--business .prices__box-spot--first {
@@ -1040,8 +1040,8 @@ body {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #FFAE00);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #FFAE00);
+  background: linear-gradient(60deg, #1a1a1a, #ffae00);
+  background: -webkit-linear-gradient(60deg, #1a1a1a, #ffae00);
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1050,7 +1050,7 @@ body {
 }
 
 .prices--packing .prices__box--premium .prices__box-price {
-  color: #00E4FF;
+  color: #00e4ff;
 }
 
 .prices--packing .prices__box--premium .prices__box-spot--first {
@@ -1063,8 +1063,8 @@ body {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
+  background: linear-gradient(60deg, #1a1a1a, #00e4ff);
+  background: -webkit-linear-gradient(60deg, #1a1a1a, #00e4ff);
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1102,12 +1102,12 @@ body {
   overflow: hidden;
   border-image-slice: 1;
   position: relative;
-  background-image: linear-gradient(206.1deg, #1A1A1A 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
+  background-image: linear-gradient(206.1deg, #1a1a1a 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
   padding-left: 65px;
   padding-top: 32px;
   padding-bottom: 75px;
   position: relative;
-  background-image: linear-gradient(206.1deg, #1A1A1A 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
+  background-image: linear-gradient(206.1deg, #1a1a1a 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
   padding-left: 65px;
   padding-top: 32px;
   padding-bottom: 75px;
@@ -1134,8 +1134,8 @@ body {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #FF3400);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #FF3400);
+  background: linear-gradient(60deg, #1a1a1a, #ff3400);
+  background: -webkit-linear-gradient(60deg, #1a1a1a, #ff3400);
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1149,8 +1149,8 @@ body {
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
+  background: linear-gradient(60deg, #1a1a1a, #00e4ff);
+  background: -webkit-linear-gradient(60deg, #1a1a1a, #00e4ff);
   -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -1172,7 +1172,7 @@ body {
 }
 
 .prices__box--business .prices__box-price {
-  color: #FF3400;
+  color: #ff3400;
 }
 
 .prices__box--business .prices__box-spot--first {
@@ -1180,7 +1180,7 @@ body {
 }
 
 .prices__box--premium .prices__box-price {
-  color: #00E4FF;
+  color: #00e4ff;
 }
 
 .prices__box--premium .prices__box-spot--first {
@@ -1606,7 +1606,7 @@ body {
 .contacts--packing input:focus:not([type=submit]),
 .contacts--packing textarea:focus {
   outline: none;
-  border-bottom: 2px solid #FFAE00 !important;
+  border-bottom: 2px solid #ffae00 !important;
 }
 
 .contacts--packing .contactForm__box {
@@ -1713,7 +1713,7 @@ body {
 .contacts input:focus:not([type=submit]),
 .contacts textarea:focus {
   outline: none;
-  border-bottom: 2px solid #FF3400;
+  border-bottom: 2px solid #ff3400;
 }
 
 .contacts textarea {
@@ -1921,7 +1921,7 @@ body {
   padding: 0 10px;
   margin: 0;
   color: #FFFFFF;
-  background: #FFAE00;
+  background: #ffae00;
 }
 
 .contacts--packing .form-field label::after {
@@ -1932,7 +1932,7 @@ body {
   margin-top: -6px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #FFAE00;
+  border-right: 5px solid #ffae00;
 }
 
 .form-field label {
@@ -1947,7 +1947,7 @@ body {
   padding: 0 10px;
   margin: 0;
   color: #FFFFFF;
-  background: #FF3400;
+  background: #ff3400;
 }
 
 .form-field #contactMessage-error {
@@ -1962,11 +1962,11 @@ body {
   margin-top: -6px;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-right: 5px solid #FF3400;
+  border-right: 5px solid #ff3400;
 }
 
 .footer--packing .footer__link::after {
-  background: #FFAE00;
+  background: #ffae00;
 }
 
 .footer--packing .footer__link.active::after {
@@ -1974,7 +1974,7 @@ body {
   content: "";
   width: 100%;
   height: 1px;
-  background: #FFAE00;
+  background: #ffae00;
   bottom: 0;
   left: 0;
 }
@@ -1988,7 +1988,7 @@ body {
   content: "";
   width: 100%;
   height: 1px;
-  background: #FF3400;
+  background: #ff3400;
   bottom: 0;
   left: 0;
 }
@@ -1998,7 +1998,7 @@ body {
   content: "";
   width: 0%;
   height: 1px;
-  background: #FF3400;
+  background: #ff3400;
   bottom: 0;
   left: 0;
   -webkit-transition: .5s;
