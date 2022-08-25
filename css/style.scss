@@ -85,6 +85,13 @@ body {
     // vertical-align: middle;
 }
 
+@media screen and (min-width:1919px) {
+    #loader {
+        width: 260px;
+        height: 260px;
+    }
+}
+
 @media screen and (max-width:1441px) {
     #loader {
         width: 180px;
@@ -215,11 +222,11 @@ body {
     position: absolute;
     width: 296.6px;
     height: 326.78px;
-    right: -13px;
-    top: -100.7px;
+    right: -106px;
+    top: -194.7px;
     background: rgba(0, 228, 255, 0.4);
     filter: blur(110px);
-    -webkit-filter: blur(110px);
+    -webkit-filter: blur(100px);
     transform: rotate(-30deg);
     -webkit-transform: rotate(-23.73deg);
 }
@@ -228,8 +235,8 @@ body {
     position: absolute;
     width: 290.33px;
     height: 319.87px;
-    right: -13px;
-    top: -150.19px;
+    right: -138px;
+    top: -262.19px;
     background: rgba(233, 130, 94, 0.6);
     filter: blur(100px);
     -webkit-filter: blur(100px);
@@ -241,26 +248,56 @@ body {
     position: absolute;
     width: 256px;
     height: 256px;
-    left: 65px;
-    top: -180px;
+    left: -73px;
+    top: -190px;
     background: rgba(233, 130, 94, 0.8);
     border: 1px solid #000000;
-    filter: blur(110px);
+    filter: blur(100px);
+
+
+
 }
 
 .spot-3 {
     position: absolute;
     width: 222.48px;
     height: 245.12px;
-
+    z-index:2;
     transform: translateY(-50%);
     top: 587px;
     background: rgba(255, 52, 0, 0.6);
     filter: blur(110px);
-    -webkit-filter: blur(110px);
+    -webkit-filter: blur(90px);
     transform: rotate(-23.73deg);
     -webkit-transform: rotate(-23.73deg);
 
+}
+
+@media screen and (min-width:1919px) {
+    .spot-3{
+        top: 820px;
+    }
+    .spot-1 {
+        position: absolute;
+        width: 508px;
+        height: 508px;
+        left: -234px;
+        top: -485px;
+    }
+
+    .spot-2 {
+        width: 333.04px;
+        height: 366.93px;
+        right: -83px;
+        top: -234.7px;
+    }
+
+    .spot-4 {
+        width: 333.04px;
+        height: 366.93px;
+        right: -103px;
+        top: -305.19px;
+    }
 }
 
 @media screen and (max-width:1441px) {
@@ -268,35 +305,45 @@ body {
         left: -114px;
     }
 
-    .spot-1 {
-        left: -42px
-    }
+    // .spot-1 {
+    //     left: -42px
+    // }
 
-    .spot-2 {
-        top: -120px
-    }
+    // .spot-2 {
+    //     top: -120px
+    // }
 
-    .spot-4 {
-        top: -190px;
-    }
+    // .spot-4 {
+    //     top: -190px;
+    // }
 }
 
 @media screen and (max-width:992px) {
 
-    .spot-2,
+
     .spot-4 {
-        top: -60px;
+        top: -100px;
         width: 173.51px;
         height: 191.17px;
-        -webkit-filter: blur(100px);
-        filter: blur(100px);
+        -webkit-filter: blur(90px);
+        filter: blur(72px);
+    }
+
+    .spot-2 {
+        right: -117px;
+        top: -102.7px;
+        width: 173.51px;
+        height: 191.17px;
+        -webkit-filter: blur(90px);
+        filter: blur(47px);
+
     }
 
     .spot-1 {
-        top: -128px;
-        left: -117px;
-        -webkit-filter: blur(100px);
-        filter: blur(100px);
+        left: -113px;
+        top: -163px;
+        -webkit-filter: blur(90px);
+        filter: blur(89px);
         width: 238px;
         height: 238px;
     }
@@ -311,21 +358,21 @@ body {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     .spot-1 {
-        top: -61px;
-        left: -17px;
-        -webkit-filter: blur(76px);
-        filter: blur(76px);
+        left: -74px;
+        top: -83px;
+        -webkit-filter: blur(90px);
+        filter: blur(62px);
         width: 146px;
         height: 146px;
     }
 
     .spot-2,
     .spot-4 {
-        top: -100px;
-        -webkit-filter: blur(86px);
-        filter: blur(86px);
+        // top: -100px;
+        // -webkit-filter: blur(86px);
+        // filter: blur(86px);
         width: 171.03px;
         height: 188.43px;
     }
@@ -339,14 +386,20 @@ body {
     }
 }
 
-@media screen and (max-width:576px) {
-    .spot-1 {
-        top: -87px;
-        left: -70px;
+// @media screen and (max-width:576px) {
+//     .spot-1 {
+//         top: -87px;
+//         left: -70px;
+//     }
+
+
+
+// }
+
+.header__bottom {
+    .container {
+        position: relative;
     }
-
-
-
 }
 
 .header__menu-link {
@@ -389,6 +442,7 @@ body {
 .header__menu-link:hover:after {
     width: 100%;
 }
+
 
 .header {
     background-color: #000;
@@ -500,7 +554,7 @@ body {
             -webkit-transform: rotate(-23.73deg);
         }
 
-        
+
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -508,7 +562,8 @@ body {
         line-height: 137.8%;
         letter-spacing: 1px;
         color: #FFFFFF;
-        span{
+
+        span {
             margin-right: 27px;
         }
     }
@@ -557,6 +612,52 @@ body {
     position: relative;
 }
 
+@media screen and (min-width:1919px){
+    .header--packing .header__bottom-image{
+        padding-top: 255px;
+        padding-bottom: 103px;
+    }
+    .header--packing .header__bottom-content{
+        top:289px;
+    }
+    .header__bottom-text{
+        margin-bottom: 80px;
+    }
+    .header--packing{
+        .header__button-box span {
+            margin-right: 52px;
+        }
+    }
+    .header--packing .header__bottom-image img {
+        max-width: 576px;
+    }
+}
+@media screen and (min-width:1919px){
+    .header__bottom-content{
+        top:263px;
+    }
+    .header__title {
+        margin-bottom: 40px;
+    }
+    .header{
+        min-height: 1100px;
+        &__bottom{
+            &-image{
+                top:237px;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .header__button-box span{
+        margin-right: 57px;
+    }
+    .header__button-box .spot{
+        right: -7px;
+    }
+}
 @media screen and (max-width:1399px) {
     .header {
         &--packing {
@@ -651,9 +752,10 @@ body {
 
         &--packing {
             .header__button-box {
-                span{
+                span {
                     margin-right: 62px;
                 }
+
                 max-width: 352px;
 
                 .spot {
@@ -729,9 +831,10 @@ body {
         &--packing {
 
             .header__button-box {
-               span{
-                margin-right: 27px;
-               }
+                span {
+                    margin-right: 27px;
+                }
+
                 max-width: 272px;
 
                 .spot {
@@ -904,7 +1007,7 @@ body {
         position: absolute;
         width: 243.17px;
         height: 267.91px;
-        top: 629px;
+        top: 90%;
         right: -100px;
         background: rgba(0, 228, 255, 0.6);
         -webkit-filter: blur(60px);
@@ -1026,7 +1129,7 @@ body {
 
     .slider {
         .spot-2 {
-            top: 765px;
+            // top: 765px;
             right: -47px;
             width: 152.05px;
             height: 167.53px;
@@ -1123,9 +1226,10 @@ body {
 .prices--packing {
     .prices__box {
         z-index: 99 !important;
-        -webkit-border-radius:20px;
+        -webkit-border-radius: 20px;
         border-radius: 20px;
         overflow: hidden !important;
+
         &--standart {
             .prices__box-price {
                 color: #FFD373;
@@ -1138,12 +1242,12 @@ body {
             // В Сафари синтаксис другой.
 
             // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f1da36)); /* Safari4+ */
-            
+
             // background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Safari5.1+ */
-            
-            
+
+
             &::before {
-                -webkit-border-radius:20px;
+                -webkit-border-radius: 20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
@@ -1169,7 +1273,7 @@ body {
             }
 
             &::before {
-                -webkit-border-radius:20px;
+                -webkit-border-radius: 20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
@@ -1197,15 +1301,15 @@ body {
             }
 
             &::before {
-                -webkit-border-radius:20px;
+                -webkit-border-radius: 20px;
                 border-radius: 20px;
                 content: "";
                 position: absolute;
                 inset: 0;
                 padding: 2px;
                 background: linear-gradient(60deg, #1a1a1a, #00E4FF);
-                background:  -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
-               
+                background: -webkit-linear-gradient(60deg, #1a1a1a, #00E4FF);
+
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1228,9 +1332,11 @@ body {
     padding-top: 88px;
     padding-bottom: 145px;
     position: relative;
+
     &__box-contact span {
         z-index: 100;
     }
+
     .spot {
         z-index: 3;
         position: absolute;
@@ -1246,7 +1352,7 @@ body {
 
     &__box {
         z-index: 99 !important;
-        -webkit-border-radius:20px;
+        -webkit-border-radius: 20px;
         border-radius: 20px;
         overflow: hidden;
         border-image-slice: 1;
@@ -1264,7 +1370,7 @@ body {
                 inset: 0;
                 padding: 2px;
                 background: linear-gradient(60deg, #1a1a1a, #E9825E);
-                background:  -webkit-linear-gradient(60deg, #1a1a1a, #E9825E);
+                background: -webkit-linear-gradient(60deg, #1a1a1a, #E9825E);
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1384,7 +1490,8 @@ body {
                 line-height: 20px;
                 letter-spacing: 0.5px;
                 color: #BBB6AC;
-                span{
+
+                span {
                     margin-left: 17px;
                 }
             }
@@ -1416,7 +1523,8 @@ body {
             letter-spacing: 1px;
             color: #FFFFFF;
             display: flex;
-            span{
+
+            span {
                 margin-right: 12px;
             }
 
@@ -1450,7 +1558,7 @@ body {
 
         &-button:hover {
             .prices__box-arrow {
-                
+
                 outline: none;
                 animation-name: moveToRight;
                 animation-duration: 1000ms;
@@ -1484,7 +1592,31 @@ body {
         left: 0;
     }
 }
-
+@media screen and (min-width:1919px){
+    .prices{
+        padding-top: 140px;
+        padding-bottom: 175px;
+        &__title{
+            margin-bottom: 80px;
+        }
+    }
+    .prices__box-price{
+        margin-bottom: 48px;
+    }
+    .prices__box-services{
+        margin-bottom: 136px;
+    }
+    .prices__box{
+        padding-top: 56px;
+        padding-left: 86px;
+    }
+    .contacts{
+        padding-bottom: 120px;
+        &__title{
+            margin-bottom: 67px;
+        }
+    }
+}
 @media screen and (max-width:1399px) {
     .prices {
         padding-bottom: 154px;
@@ -1509,6 +1641,7 @@ body {
     .prices__box-contact span {
         margin-right: 2px;
     }
+
     .prices {
         padding-top: 80px;
         padding-bottom: 102px;
@@ -1616,7 +1749,7 @@ body {
             &-services {
                 margin-bottom: 101px;
 
-              
+
 
                 span {
                     margin-left: 10px;
@@ -1630,7 +1763,7 @@ body {
             }
 
             &-contact {
-                
+
 
                 span {
                     margin-right: 4px;
@@ -1657,7 +1790,7 @@ body {
         padding-top: 53px;
         padding-bottom: 65px;
 
-        .spot{
+        .spot {
             bottom: 100.9px;
         }
     }
@@ -1696,7 +1829,7 @@ body {
             &-services {
                 margin-bottom: 31px;
 
-    
+
 
                 span {
                     font-size: 14px;
@@ -1781,9 +1914,9 @@ body {
                         height: 8px;
                     }
 
-                   span{
-                    margin-left: 20px;
-                   }
+                    span {
+                        margin-left: 20px;
+                    }
                 }
 
 
@@ -1791,15 +1924,16 @@ body {
             }
 
         }
-        .spot{
-            bottom:0;
+
+        .spot {
+            bottom: 0;
         }
     }
 
     .prices__box-contact {
-       span{
-        margin-right: 40px;
-       }
+        span {
+            margin-right: 40px;
+        }
     }
 
     .prices__box-button {
@@ -1924,10 +2058,13 @@ body {
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 30px;
-        &:focus,&:active{
+
+        &:focus,
+        &:active {
             outline: none;
             box-shadow: none;
         }
+
         &-arrow {
             outline: none;
             position: absolute;
@@ -1967,10 +2104,12 @@ body {
             position: absolute;
             width: 125.89px;
             height: -22.83px;
-            img{
+
+            img {
                 width: 100%;
                 height: auto;
             }
+
             // background: rgba(0, 228, 255, 0.6);
             // filter: blur(34px);
             // -webkit-filter: blur(34px);
@@ -2444,5 +2583,14 @@ body {
 @media screen and (max-width:767px) {
     .header__menu.fixed-menu {
         top: -64px;
+    }
+}
+
+@media screen and (min-width:1919px){
+    .contacts__title{
+        margin-bottom: 67px;
+    }
+    .slider__title{
+        top:60px;
     }
 }
