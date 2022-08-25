@@ -1308,7 +1308,6 @@ body {
                 padding: 2px;
                 background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
                 background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
-
                 -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
                 -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
                 -webkit-mask-composite: xor;
@@ -1360,60 +1359,82 @@ body {
         padding-left: 65px;
         padding-top: 32px;
         padding-bottom: 75px;
-
-        &--standart {
-            &::before {
-                border-radius: 20px;
-                content: "";
+        &-container{
+            position: relative;
+            &::before{
                 position: absolute;
-                inset: 0;
-                padding: 2px;
+                content: "";
+                width: 98%;
+                height: 98%;
+                border-radius: 20px;
+                background-image: linear-gradient(206.1deg, rgba(26, 26, 26, 1) 38.17%, rgba(26, 26, 26, 0.977429) 60.78%, rgba(0, 0, 0, 0) 98.34%);
+
+            }
+            padding:2px;
+            border-radius: 20px;
+            &--standart{
                 background: linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
-                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
-
             }
-        }
-
-        &--business {
-            &::before {
-                border-radius: 20px;
-                content: "";
-                position: absolute;
-                inset: 0;
-                padding: 2px;
+            &--business{
                 background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
-                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
-
             }
-        }
-
-        &--premium {
-            &::before {
-                border-radius: 20px;
-                content: "";
-                position: absolute;
-                inset: 0;
-                padding: 2px;
+            &--premium{
                 background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
-                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
-
             }
         }
+        // &--standart {
+        //     &::before {
+        //         border-radius: 20px;
+        //         content: "";
+        //         position: absolute;
+        //         inset: 0;
+        //         padding: 2px;
+        //         background: linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
+        //         background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), #E9825E);
+        //         -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+        //         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        //         -webkit-mask-composite: xor;
+        //         mask-composite: exclude;
+        //         overflow: hidden;
+
+        //     }
+        // }
+
+        // &--business {
+        //     &::before {
+        //         border-radius: 20px;
+        //         content: "";
+        //         position: absolute;
+        //         inset: 0;
+        //         padding: 2px;
+        //         background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
+        //         background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 52, 0, 1));
+        //         -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+        //         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        //         -webkit-mask-composite: xor;
+        //         mask-composite: exclude;
+        //         overflow: hidden;
+
+        //     }
+        // }
+
+        // &--premium {
+        //     &::before {
+        //         border-radius: 20px;
+        //         content: "";
+        //         position: absolute;
+        //         inset: 0;
+        //         padding: 2px;
+        //         background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+        //         background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+        //         -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+        //         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        //         -webkit-mask-composite: xor;
+        //         mask-composite: exclude;
+        //         overflow: hidden;
+
+        //     }
+        // }
 
 
         &-img {
@@ -1711,11 +1732,11 @@ body {
 }
 
 @media screen and (max-width:991px) {
-    .prices__box:first-child {
+    .prices__box-container:first-child {
         margin-bottom: 40px;
     }
 
-    .prices__box:nth-child(2) {
+    .prices__box-container:nth-child(2) {
         margin-bottom: 40px;
     }
 
@@ -1794,11 +1815,11 @@ body {
         }
     }
 
-    .prices__box:first-child {
+    .prices__box-container:first-child {
         margin-bottom: 27px;
     }
 
-    .prices__box:nth-child(2) {
+    .prices__box-container:nth-child(2) {
         margin-bottom: 27px;
     }
 
@@ -1874,11 +1895,11 @@ body {
         padding-bottom: 70px;
     }
 
-    .prices__box:first-child {
+    .prices__box-container:first-child {
         margin-bottom: 30px;
     }
 
-    .prices__box:nth-child(2) {
+    .prices__box-container:nth-child(2) {
         margin-bottom: 30px;
     }
 
