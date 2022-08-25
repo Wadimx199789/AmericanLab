@@ -1004,26 +1004,24 @@ body {
   overflow: hidden !important;
 }
 
+.prices--packing .prices__box-container--standart {
+  background: linear-gradient(60deg, #1a1a1a, #ffd373);
+}
+
+.prices--packing .prices__box-container--business {
+  background: linear-gradient(60deg, #1a1a1a, #ffae00);
+}
+
+.prices--packing .prices__box-container--premium {
+  background: linear-gradient(60deg, #1a1a1a, #00e4ff);
+}
+
 .prices--packing .prices__box--standart .prices__box-price {
   color: #ffd373;
 }
 
 .prices--packing .prices__box--standart .prices__box-spot--first {
   background: rgba(255, 211, 115, 0.85);
-}
-
-.prices--packing .prices__box--standart::before {
-  border-radius: 20px;
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #ffd373);
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  overflow: hidden;
 }
 
 .prices--packing .prices__box--business .prices__box-price {
@@ -1034,42 +1032,12 @@ body {
   background: rgba(255, 174, 0, 0.8);
 }
 
-.prices--packing .prices__box--business::before {
-  border-radius: 20px;
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #ffae00);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #ffae00);
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  overflow: hidden;
-}
-
 .prices--packing .prices__box--premium .prices__box-price {
   color: #00e4ff;
 }
 
 .prices--packing .prices__box--premium .prices__box-spot--first {
   background: rgba(0, 228, 255, 0.8);
-}
-
-.prices--packing .prices__box--premium::before {
-  border-radius: 20px;
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 2px;
-  background: linear-gradient(60deg, #1a1a1a, #00e4ff);
-  background: -webkit-linear-gradient(60deg, #1a1a1a, #00e4ff);
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  overflow: hidden;
 }
 
 .prices {

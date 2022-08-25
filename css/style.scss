@@ -1228,7 +1228,17 @@ body {
         -webkit-border-radius: 20px;
         border-radius: 20px;
         overflow: hidden !important;
-
+        &-container{
+            &--standart{
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 211, 115, 1));
+            }
+            &--business{
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
+            }
+            &--premium{
+                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+            }
+        }
         &--standart {
             .prices__box-price {
                 color: rgba(255, 211, 115, 1);;
@@ -1245,21 +1255,21 @@ body {
             // background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%); /* Safari5.1+ */
 
 
-            &::before {
-                -webkit-border-radius: 20px;
-                border-radius: 20px;
-                content: "";
-                position: absolute;
-                inset: 0;
-                padding: 2px;
-                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 211, 115, 1));
-                -webkit-mask: -webkit-gradient(top,#fff 0%) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
+            // &::before {
+            //     -webkit-border-radius: 20px;
+            //     border-radius: 20px;
+            //     content: "";
+            //     position: absolute;
+            //     inset: 0;
+            //     padding: 2px;
+            //     background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 211, 115, 1));
+            //     -webkit-mask: -webkit-gradient(top,#fff 0%) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            //     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            //     -webkit-mask-composite: xor;
+            //     mask-composite: exclude;
+            //     overflow: hidden;
 
-            }
+            // }
         }
 
         &--business {
@@ -1271,22 +1281,22 @@ body {
                 background: rgba(255, 174, 0, 0.8);
             }
 
-            &::before {
-                -webkit-border-radius: 20px;
-                border-radius: 20px;
-                content: "";
-                position: absolute;
-                inset: 0;
-                padding: 2px;
-                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
-                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
+            // &::before {
+            //     -webkit-border-radius: 20px;
+            //     border-radius: 20px;
+            //     content: "";
+            //     position: absolute;
+            //     inset: 0;
+            //     padding: 2px;
+            //     background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
+            //     background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(255, 174, 0, 1));
+            //     -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            //     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            //     -webkit-mask-composite: xor;
+            //     mask-composite: exclude;
+            //     overflow: hidden;
 
-            }
+            // }
 
         }
 
@@ -1299,22 +1309,22 @@ body {
                 background: rgba(0, 228, 255, 0.8);
             }
 
-            &::before {
-                -webkit-border-radius: 20px;
-                border-radius: 20px;
-                content: "";
-                position: absolute;
-                inset: 0;
-                padding: 2px;
-                background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
-                background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
-                -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-                -webkit-mask-composite: xor;
-                mask-composite: exclude;
-                overflow: hidden;
+            // &::before {
+            //     -webkit-border-radius: 20px;
+            //     border-radius: 20px;
+            //     content: "";
+            //     position: absolute;
+            //     inset: 0;
+            //     padding: 2px;
+            //     background: linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+            //     background: -webkit-linear-gradient(60deg, rgba(26, 26, 26, 1), rgba(0, 228, 255, 1));
+            //     -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
+            //     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            //     -webkit-mask-composite: xor;
+            //     mask-composite: exclude;
+            //     overflow: hidden;
 
-            }
+            // }
 
 
         }
